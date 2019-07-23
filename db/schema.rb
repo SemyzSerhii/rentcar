@@ -10,14 +10,30 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_07_23_144031) do
+ActiveRecord::Schema.define(version: 2019_07_23_152632) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
+  create_table "cars", force: :cascade do |t|
+    t.string "color"
+    t.string "fuel_type"
+    t.integer "age"
+    t.float "engine"
+    t.boolean "enum_status"
+    t.bigint "salon_id"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["salon_id"], name: "index_cars_on_salon_id"
+  end
+
   create_table "salons", force: :cascade do |t|
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.bigint "cars_id"
+    t.index ["cars_id"], name: "index_salons_on_cars_id"
   end
 
+  add_foreign_key "cars", "salons"
+  add_foreign_key "salons", "cars", column: "cars_id"
 end
