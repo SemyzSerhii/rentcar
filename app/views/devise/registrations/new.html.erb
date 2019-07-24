@@ -1,0 +1,32 @@
+
+<div class="size">
+  <form>
+    <div class="form-group">
+      <img src="https://image.flaticon.com/icons/svg/74/74472.svg" class="image">
+      <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+        <%= render 'devise/shared/error_messages', resource: resource %>
+
+        <div class="field">
+          <%= f.email_field :email, autofocus: true, autocomplete: 'email', class: 'form-control borders',
+            placeholder: 'Enter your email' %>
+        </div>
+
+        <div class="field">
+          <%= f.password_field :password, autocomplete: 'new-password', class: 'form-control borders',
+            placeholder: 'Enter your password' %>
+        </div>
+
+        <div class="field">
+          <%= f.password_field :password_confirmation, autocomplete: 'new-password', class: 'form-control borders',
+            placeholder: 'Password confirmation'%>
+        </div>
+
+        <div class="actions">
+          <%= button_tag 'Sign up', class:'btn btn-primary buttons'%>
+        </div>
+      <% end %>
+
+      <%= link_to 'Log in', authenticate_session_path, class: 'log_in'%>
+    </div>
+  </form>
+</div>

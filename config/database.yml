@@ -1,24 +1,19 @@
 default: &default
   adapter: postgresql
-  host: <%= Rails.application.secrets[:db_host] %>
-  port: <%= Rails.application.secrets[:db_port] %>
-  timeout: 5000
   encoding: unicode
-  database: <%= Rails.application.secrets[:db_name]%>
-  username: <%= Rails.application.secrets[:db_username] %>
-  password: <%= Rails.application.secrets[:db_password]%>
+  host: <%= ENV["DB_HOST"] %>
+  port: <%= ENV["DB_PORT"] %>
+  timeout: 5000
+  database: <%= ENV["DB_NAME"] %>
+  username: <%= ENV["DB_USERNAME"] %>
+  password: <%= ENV["DB_PASSWORD"] %>
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
 
 development:
   <<: *default
-  database: RentCar_development
 
 test:
   <<: *default
-  database: RentCar_test
 
 production:
   <<: *default
-  database: RentCar_production
-  username: RentCar
-  password: <%= ENV['RENTCAR_DATABASE_PASSWORD'] %>
