@@ -1,7 +1,3 @@
-body {
-  background-color: darkgrey;
-}
-
 .size {
   margin: 10rem 35rem 15rem 35rem;
   color: black;
@@ -21,7 +17,7 @@ body {
   border-radius: 1.5rem;
   margin-top: 2rem;
   margin-bottom: 1rem;
-  width: 19rem;
+  width: 20rem;
 }
 
 form button.buttons:hover {
@@ -43,10 +39,9 @@ form button.buttons:hover {
   text-decoration: none;
   background-color: gray;
   color: black;
-  padding: 0.55rem 8.1rem 0.55rem 8.1rem;
+  padding: 0.55rem 7.1rem 0.55rem 7.1rem;
   border: 1px solid black;
   border-radius: 1.5rem;
-  width: 19rem;
 }
 
 form a.log_in:hover {
