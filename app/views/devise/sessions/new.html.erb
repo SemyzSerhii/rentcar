@@ -1,0 +1,30 @@
+<div class="size_in">
+  <form>
+    <div class="form-group">
+      <img src="https://image.flaticon.com/icons/svg/74/74472.svg" class="image_in">
+      <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+        <div class="field_in">
+          <%= f.email_field :email, autofocus: true, autocomplete: 'email', class: 'form-control borders_in',
+            placeholder: 'Enter your email' %>
+        </div>
+        <div class="field_in">
+          <%= f.password_field :password, autocomplete: 'current-password', class: 'form-control borders_in',
+            placeholder: 'Enter your password' %>
+        </div>
+        <% if devise_mapping.rememberable? %>
+          <div class="field_in">
+            <%= f.check_box :remember_me %>
+            <%= f.label :remember_me %>
+          </div>
+        <% end %>
+        <div class="actions">
+          <%= button_tag  'Log in', class: 'btn btn-primary buttons_in'%>
+      <%= link_to 'Sign up', new_authenticate_registration_path, class: 'sign_up'%>
+        </div>
+      <% end %>
+    </div>
+  </form>
+  <div class="forgot_pass_div">
+      <%= link_to 'Forgot password?', new_authenticate_password_path, class: 'forgot_pass'%>
+  </div>
+</div>
