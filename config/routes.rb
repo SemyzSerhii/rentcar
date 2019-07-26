@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  devise_for :authenticates
+  devise_for :customers
 
   root 'salons#index'
 

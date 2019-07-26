@@ -15,18 +15,6 @@ ActiveRecord::Schema.define(version: 2019_07_24_130929) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "authenticates", force: :cascade do |t|
-    t.string "email", default: "", null: false
-    t.string "encrypted_password", default: "", null: false
-    t.string "reset_password_token"
-    t.datetime "reset_password_sent_at"
-    t.datetime "remember_created_at"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-    t.index ["email"], name: "index_authenticates_on_email", unique: true
-    t.index ["reset_password_token"], name: "index_authenticates_on_reset_password_token", unique: true
-  end
-
   create_table "cars", force: :cascade do |t|
     t.string "color"
     t.string "fuel_type"
@@ -37,6 +25,18 @@ ActiveRecord::Schema.define(version: 2019_07_24_130929) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["salon_id"], name: "index_cars_on_salon_id"
+  end
+
+  create_table "customers", force: :cascade do |t|
+    t.string "email", default: "", null: false
+    t.string "encrypted_password", default: "", null: false
+    t.string "reset_password_token"
+    t.datetime "reset_password_sent_at"
+    t.datetime "remember_created_at"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["email"], name: "index_customers_on_email", unique: true
+    t.index ["reset_password_token"], name: "index_customers_on_reset_password_token", unique: true
   end
 
   create_table "salons", force: :cascade do |t|

@@ -19,12 +19,12 @@
         <% end %>
         <div class="actions">
           <%= button_tag  'Log in', class: 'btn btn-primary buttons_in'%>
-          <%= link_to 'Sign up', new_authenticate_registration_path, class: 'sign_up'%>
+          <%= link_to 'Sign up', new_customer_registration_path, class: 'sign_up'%>
         </div>
       </div>
     </form>
     <div class="forgot_pass_div">
-      <%= link_to 'Forgot password?', new_authenticate_password_path, class: 'forgot_pass'%>
+      <%= link_to 'Forgot password?', new_customer_password_path, class: 'forgot_pass'%>
     </div>
   </div>
 <% end %>
