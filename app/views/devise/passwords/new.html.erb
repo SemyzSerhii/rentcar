@@ -1,23 +1,22 @@
-
-<div class="size_fr">
-  <form>
-    <div class="form-group">
-      <img src="https://image.flaticon.com/icons/svg/74/74472.svg" class="image_fr">
-      <h2>Forgot your password?</h2>
-      <%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
+<%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
+  <div class="size_fr">
+    <form>
+      <div class="form-group">
+        <img src="https://image.flaticon.com/icons/svg/74/74472.svg" class="image_fr">
+        <h2>Forgot your password?</h2>
         <%= render 'devise/shared/error_messages', resource: resource %>
         <div class="field_fr">
           <%= f.email_field :email, autofocus: true, autocomplete: 'email',  class: 'form-control borders_fr',
-              placeholder: 'Enter your email' %>
+            placeholder: 'Enter your email' %>
         </div>
         <div class="actions">
           <%= button_tag 'Reset password ', class: 'btn btn-primary buttons_fr' %>
         </div>
-      <% end %>
-      <%= link_to 'Sign up', new_authenticate_registration_path, class: 'sign_up_fr'%>
-    </div>
-    <div class="fr_div">
-      <%= link_to 'Log in', authenticate_session_path, class: 'log_in_fr'%>
-    </div>
-  </form>
-</div>
+        <%= link_to 'Sign up', new_authenticate_registration_path, class: 'sign_up_fr'%>
+      </div>
+      <div class="fr_div">
+        <%= link_to 'Log in', authenticate_session_path, class: 'log_in_fr'%>
+      </div>
+    </form>
+  </div>
+<% end %>
