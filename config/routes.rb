@@ -3,6 +3,11 @@ Rails.application.routes.draw do
 
   root 'salons#index'
 
-  mount LetterOpenerWeb::Engine, at: '/letter_opener' if Rails.env.development?
+  namespace :admin do
+    resources :salons
+    resources :cars
+
+    root to: 'admin#index'
+  end
 end
 
