@@ -1,0 +1,36 @@
+.size_new {
+  margin: 2rem 35rem 5rem 35rem;
+  color: black;
+  text-align: center;
+}
+
+.button-salon-new {
+  border-color: black;
+  background-color: gray;
+  color: black;
+  border-radius: 1.5rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  width: 20rem;
+}
+
+form button.button-salon-new:hover {
+  background: lightgrey;
+  border-color: black;
+  color: black;
+}
+
+form input.button-salon-new:hover {
+  background: lightgrey;
+  border-color: black;
+  color: black;
+}
+
+form input.button-salon {
+  background-color: gray;
+  color: black;
+  margin-bottom: 1rem;
+  width: 17rem;
+  border-radius: 1rem;
+  border: 1px solid black;
+}
