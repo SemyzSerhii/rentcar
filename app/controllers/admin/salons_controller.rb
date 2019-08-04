@@ -1,5 +1,11 @@
 class Admin::SalonsController < AdminController
-  before_action :find_salon, only: %i[edit update destroy]
+  before_action :find_salon, only: %i[ show edit update destroy]
+
+  def index
+    @salons = Salon.all
+  end
+
+  def show; end
 
   def new
     @salon = Salon.new

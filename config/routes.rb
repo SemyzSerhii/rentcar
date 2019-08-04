@@ -7,7 +7,7 @@ Rails.application.routes.draw do
     resources :salons
     resources :cars
 
-    root to: 'admin#index'
+    root 'admin#index'
   end
 end
 
