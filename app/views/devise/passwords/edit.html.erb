@@ -1,25 +1,30 @@
-<h2>Change your password</h2>
-
 <%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :put }) do |f| %>
-  <%= render "devise/shared/error_messages", resource: resource %>
+  <%= render 'devise/shared/error_messages', resource: resource %>
   <%= f.hidden_field :reset_password_token %>
+  <div class="size_rs">
+    <form>
+      <div class="form-group">
+        <img src="https://image.flaticon.com/icons/svg/74/74472.svg" class="image_rs">
+        <h2>Change your password</h2>
+        <div class="field_rs">
+          <%= f.password_field :password, autofocus: true, autocomplete: 'new-password',
+            placeholder: 'Enter your new password', class: 'form-control borders_rs' %>
+        </div>
 
-  <div class="field">
-    <%= f.label :password, "New password" %><br />
-    <% if @minimum_password_length %>
-      <em>(<%= @minimum_password_length %> characters minimum)</em><br />
-    <% end %>
-    <%= f.password_field :password, autofocus: true, autocomplete: "new-password" %>
-  </div>
+        <div class="field_rs">
+          <%= f.password_field :password_confirmation, autocomplete: 'off', placeholder: 'Password confirmation',
+            class: 'form-control borders_rs'%>
+        </div>
 
-  <div class="field">
-    <%= f.label :password_confirmation, "Confirm new password" %><br />
-    <%= f.password_field :password_confirmation, autocomplete: "off" %>
-  </div>
-
-  <div class="actions">
-    <%= f.submit "Change my password" %>
+        <div class="actions">
+          <%= button_tag 'Change my password', class: 'btn btn-primary buttons_rs' %>
+        </div>
+        <%= link_to 'Sign up', new_customer_registration_path, class: 'sign_up_rs'%>
+      </div>
+      <div class="rs_div">
+        <%= link_to 'Log in', customer_session_path, class: 'log_in_rs'%>
+      </div>
+    </form>
   </div>
 <% end %>
 
-<%= render "devise/shared/links" %>

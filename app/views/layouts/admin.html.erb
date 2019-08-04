@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>RentCar</title>
+    <title>Admin</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -10,9 +10,7 @@
   </head>
 
   <body>
-    <%= render 'navbar/nav' %>
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
+    <%= render 'admin/navbar/nav_admin' %>
     <%= yield %>
   </body>
 </html>

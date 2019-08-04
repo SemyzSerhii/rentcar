@@ -1,0 +1,21 @@
+<div class="margin_new">
+  <%= link_to 'New', new_admin_salon_path, class: 'new_salon' %>
+</div>
+<table class="table table-hover table-dark margin_table">
+  <thead>
+  <tr>
+    <th scope="col">Id</th>
+    <th scope="col">Image</th>
+    <th scope="col">Name</th>
+    <th scope="col">Created at</th>
+    <th scope="col">Updated at</th>
+  </tr>
+  </thead>
+  <tbody>
+  <% @salons.each do |salon| %>
+    <tr>
+      <%= render salon %>
+    </tr>
+  <% end %>
+  </tbody>
+</table>

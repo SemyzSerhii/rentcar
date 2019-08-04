@@ -1,0 +1,51 @@
+.size {
+  margin: 5rem 35rem 10rem 35rem;
+  color: black;
+  text-align: center;
+}
+
+.borders {
+  border-radius: 1rem;
+  background-color: lightgrey;
+  border-color: black;
+}
+
+.buttons {
+  border-color: black;
+  background-color: gray;
+  color: black;
+  border-radius: 1.5rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  width: 20rem;
+}
+
+form button.buttons:hover {
+  background: lightgrey;
+  border-color: black;
+  color: black;
+}
+
+.field {
+  margin-bottom: 0.5rem;
+}
+
+.image {
+  width: 5rem;
+  height: 6rem;
+}
+
+.log_in {
+  text-decoration: none;
+  background-color: gray;
+  color: black;
+  padding: 0.55rem 7.1rem 0.55rem 7.1rem;
+  border: 1px solid black;
+  border-radius: 1.5rem;
+}
+
+form a.log_in:hover {
+  background: lightgrey;
+  color: black;
+  text-decoration: none;
+}

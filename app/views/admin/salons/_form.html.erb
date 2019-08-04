@@ -1,0 +1,20 @@
+<div class="size_new">
+  <form>
+    <div class="form-group">
+      <%= form_for @salon, url: admin_salons_path, class: 'md-form' do |f| %>
+          <%= f.fields_for :picture, @salon.picture || @salon.build_picture do |ff| %>
+            <%= ff.label :url, 'Image' %>
+            <%= ff.file_field :url , class: 'button-salon', language: 'english' %>
+            <small id="bodyHelp" class="form-text text-danger">
+              <%= @salon.errors['picture.url'].join(', ') %>
+            </small>
+          <% end %>
+          <div class="field">
+            <%= f.search_field :name, autofocus: true, autocomplete: 'name', class: 'form-control borders',
+              placeholder: 'Enter salon name' %>
+            <%= button_tag 'Save', class: ' btn btn-primary button-salon-new' %>
+      <% end %>
+      </div>
+    </div>
+  </form>
+</div>

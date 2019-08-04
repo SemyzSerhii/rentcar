@@ -1,8 +1,13 @@
 Rails.application.routes.draw do
-  devise_for :authenticates
+  devise_for :customers
 
   root 'salons#index'
 
-  mount LetterOpenerWeb::Engine, at: "/letter_opener"
+  namespace :admin do
+    resources :salons
+    resources :cars
+
+    root 'admin#index'
+  end
 end
 
