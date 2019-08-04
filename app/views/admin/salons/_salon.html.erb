@@ -1,9 +1,12 @@
+<th scope="row"><%=salon.id %></th>
 <% if salon.picture.present? %>
-  <%= image_tag salon.picture.url.url, alt: 'Image', class: 'card-img-top photo_post', target: '_blank'%>
+  <td><%= image_tag salon.picture.url.url, class: 'image_salons'%></td>
 <% else %>
-  <%= image_tag 'standart_post_image.jpg',
-    alt: 'Image', class: 'card-img-top photo_post', target: '_blank' %>
+  <td>
+    <img src="https://www.driversupport.com/wp-content/uploads/2018/04/Placeholder.gif"
+           alt="image" class="image_salons">
+  </td>
 <% end %>
-<h2 class="card-text" style="font-size: 1.5rem; height: 112px;  width: 100%;
-  color: white; position: absolute; z-index: 1; padding: 40px; margin-top: -12.5rem; text-align: left">
-<%= salon.name[0..100] %>
+<td><%= salon.name%></td>
+<td><%=salon.created_at%></td>
+<td><%=salon.updated_at%></td>
