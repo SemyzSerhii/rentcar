@@ -1,4 +1,4 @@
-class Admin::SalonsController < AdminController
+class Admin::SalonsController < Admin::AdminController
   before_action :find_salon, only: %i[ show edit update destroy]
 
   def index
@@ -13,6 +13,9 @@ class Admin::SalonsController < AdminController
 
   def create
     @salon = Salon.create(salons_params)
+    if @salon.save
+      redirect_to admin_root_path
+    end
   end
 
   def edit; end
@@ -32,6 +35,6 @@ class Admin::SalonsController < AdminController
   end
 
   def salons_params
-    params.require(:salon).permit(:name)
+    params.require(:salon).permit(:name, picture_attributes: %i[id url])
   end
 end

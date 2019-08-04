@@ -1,4 +1,4 @@
-class Admin::CarsController < AdminController
+class Admin::CarsController < Admin::AdminController
   before_action :find_car, only: %i[edit update destroy]
 
   def new

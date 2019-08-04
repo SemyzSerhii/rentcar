@@ -1,0 +1,9 @@
+<% if salon.picture.present? %>
+  <%= image_tag salon.picture.url.url, alt: 'Image', class: 'card-img-top photo_post', target: '_blank'%>
+<% else %>
+  <%= image_tag 'standart_post_image.jpg',
+    alt: 'Image', class: 'card-img-top photo_post', target: '_blank' %>
+<% end %>
+<h2 class="card-text" style="font-size: 1.5rem; height: 112px;  width: 100%;
+  color: white; position: absolute; z-index: 1; padding: 40px; margin-top: -12.5rem; text-align: left">
+<%= salon.name[0..100] %>

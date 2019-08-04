@@ -1,0 +1,16 @@
+<%= form_for @salon, url: admin_salons_path do |f| %>
+  <div>
+    <%= f.fields_for :picture, @salon.picture || @salon.build_picture do |ff| %>
+      <%= ff.label :url, 'Image' %>
+      <%= ff.file_field :url %>
+      </div>
+      <small id="bodyHelp" class="form-text text-danger">
+        <%= @salon.errors['picture.url'].join(', ') %>
+      </small>
+    <% end %>
+    <div class="field">
+      <%= f.search_field :name, autofocus: true, autocomplete: 'name', class: 'form-control borders',
+        placeholder: 'Enter salon name' %>
+    </div>
+  <%= button_tag 'save' %>
+<% end %>

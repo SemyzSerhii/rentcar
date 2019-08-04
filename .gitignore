@@ -32,6 +32,7 @@ yarn-debug.log*
 .idea
 .DS_Store
 .env
+public/uploads/*
 
 # Ignore application configuration
 /config/application.yml
