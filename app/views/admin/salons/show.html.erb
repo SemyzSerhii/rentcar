@@ -1,0 +1,21 @@
+<div class="media size-salons-show width-height-salon-show">
+  <div class="media-left">
+    <% if @salon.picture.present? %>
+      <%= image_tag @salon.picture.url.url, class: 'media-object image-salons-show'%>
+    <% else %>
+      <img src="https://www.driversupport.com/wp-content/uploads/2018/04/Placeholder.gif"
+           alt=" media-object image" class="image-salons-show">
+    <% end %>
+  </div>
+  <div class="show">
+    <div class="media-body padding-text-show ">
+      <h2 class="media-heading table-dark table-dark-radius"> Name: <%= @salon.name %></h2>
+      <h4 class="table-dark"> Created At: <%= @salon.created_at %></h4>
+      <h4 class="table-dark table-dark-border">Updated At: <%= @salon.updated_at %></h4>
+    </div>
+    <div class="link-show">
+      <%= link_to 'Edit', edit_admin_salon_path(@salon), class: 'show_salon' %>
+      <%= link_to 'Delete', admin_salon_path, method: :delete, class: 'show_salon' %>
+    </div>
+  </div>
+</div>

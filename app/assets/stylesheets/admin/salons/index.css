@@ -3,7 +3,6 @@
   margin-right: 10rem;
   margin-left: 10rem;
   width: 70rem;
-  border-radius: 0.5rem;
 }
 
 .image_salons {
@@ -11,7 +10,7 @@
   height: 7rem;
 }
 
-.new_salon {
+.new-salon {
   text-decoration: none;
   background-color: gray;
   color: black;
@@ -20,7 +19,7 @@
   border-radius: 1rem;
 }
 
-a.new_salon:hover {
+a.new-salon:hover {
   background: lightgrey;
   color: black;
   text-decoration: none;
@@ -30,4 +29,10 @@ a.new_salon:hover {
   margin-top: 1.5rem;
   margin-right: 1rem;
   float: right;
+}
+
+.table-dark {
+  background-color: slategrey;
+  border: 1px solid #454d55;
+  color: #2E2F30;
 }
