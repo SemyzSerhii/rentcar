@@ -14,24 +14,30 @@ class Admin::SalonsController < Admin::AdminController
   def create
     @salon = Salon.create(salons_params)
     if @salon.save
-      redirect_to admin_root_path
+      redirect_to admin_salons_path
     end
   end
 
   def edit; end
 
   def update
-    @salon = Salon.update(salons_params)
+    if @salon.update_attributes(salons_params)
+      redirect_to admin_salons_path
+    else
+      :edit
+    end
   end
 
   def destroy
-    @salon.destroy
+     if @salon.destroy
+       redirect_to admin_salons_path
+     end
   end
 
   private
 
   def find_salon
-    @post = Salon.find(params[:id])
+    @salon = Salon.find(params[:id])
   end
 
   def salons_params

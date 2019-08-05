@@ -1,0 +1,61 @@
+.size-salons-show {
+  margin: 3rem 10rem 5rem 3rem;
+  background-color: slategrey;
+  border: 1px solid lightgrey;
+  border-radius: 0.25rem;
+  text-align: left;
+}
+
+.width-height-salon-show {
+  width: 76rem;
+  height: 30rem;
+}
+
+.image-salons-show {
+  width: 43rem;
+  height: 29.9rem;
+  border-right: 2px solid lightgrey;
+  border-top-left-radius: 0.25rem;
+  border-bottom-left-radius: 0.25rem;
+  background-color: slategrey;
+}
+
+.table-dark {
+  margin-bottom: 0;
+  padding-top: 2rem;
+  padding-left: 2rem;
+  border: 1px solid lightgrey;
+  border-left: 0;
+}
+
+.table-dark-radius {
+  border-top-right-radius: 0.25rem;
+}
+
+.table-dark-border {
+  border-bottom: 2px solid lightgrey;
+}
+
+.show_salon {
+  text-decoration: none;
+  background-color: #454d55;
+  color: lightgrey;
+  padding: 0.55rem 1.5rem 0.55rem 1.5rem;
+  border: 1px solid lightgrey;
+  border-radius: 1rem;
+}
+
+a.show_salon:hover {
+  background: lightgrey;
+  color: black;
+  text-decoration: none;
+}
+
+.show {
+  display: block;
+  width: 32.9rem;
+}
+
+.link-show {
+  padding: 10rem 5rem 6rem 2rem;
+}

@@ -1,5 +1,5 @@
 <div class="margin_new">
-  <%= link_to 'New', new_admin_salon_path, class: 'new_salon' %>
+  <%= link_to 'New', new_admin_salon_path, class: 'new-salon' %>
 </div>
 <table class="table table-hover table-dark margin_table">
   <thead>
@@ -12,10 +12,10 @@
   </tr>
   </thead>
   <tbody>
-  <% @salons.each do |salon| %>
-    <tr>
-      <%= render salon %>
-    </tr>
-  <% end %>
+    <% @salons.each do |salon| %>
+      <tr onclick="window.location.href='<%= admin_salon_path(salon) %>'; return false">
+        <%= render salon %>
+      </tr>
+    <% end %>
   </tbody>
 </table>

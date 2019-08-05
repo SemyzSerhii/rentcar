@@ -1,12 +1,14 @@
-<th scope="row"><%=salon.id %></th>
-<% if salon.picture.present? %>
-  <td><%= image_tag salon.picture.url.url, class: 'image_salons'%></td>
-<% else %>
-  <td>
-    <img src="https://www.driversupport.com/wp-content/uploads/2018/04/Placeholder.gif"
+<a href="<%= admin_salon_path(salon) %>">
+  <th scope="row"><%=salon.id %></th>
+  <% if salon.picture.present? %>
+    <td><%= image_tag salon.picture.url.url, class: 'image_salons'%></td>
+  <% else %>
+    <td>
+      <img src="https://www.driversupport.com/wp-content/uploads/2018/04/Placeholder.gif"
            alt="image" class="image_salons">
-  </td>
-<% end %>
-<td><%= salon.name%></td>
-<td><%=salon.created_at%></td>
-<td><%=salon.updated_at%></td>
+    </td>
+  <% end %>
+  <td><%= salon.name%></td>
+  <td><%=salon.created_at%></td>
+  <td><%=salon.updated_at%></td>
+</a>
