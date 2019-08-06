@@ -1,14 +1,40 @@
-<nav class="navbar navbar-dark bg-dark">
-  <%= link_to 'Admin', admin_root_path, class: 'navbar-brand'%>
+<nav class="navbar navbar-dark nav-bar">
   <ul class="navbar-nav mt-2 mt-lg-0 " >
       <li class="nav-item link">
-        <%= link_to 'Salons', admin_salons_path, class: 'nav-link ' %>
       </li>
       <li class="nav-item link">
-
       </li>
       <li class="nav-item link">
-
       </li>
   </ul>
 </nav>
+<div class="sidebar">
+  <div class="sidebar-inner">
+    <div class="sidebar-logo">
+  <%= link_to 'RentCar', admin_root_path, id: 'demoFont', class: 'navbar-brand'%>
+</div>
+  <ul class="sidebar-menu scrollable pos-r ps">
+    <li class="nav-item">
+      <a href="<%= admin_salons_path %>" class="sidebar-link">
+        <span class="icon-holder"><i class="fas fa-warehouse li-nav-salons "></i></span>
+        <span class="title">Salons</span>
+      </a>
+      </li>
+    <li class="nav-item"> <a href="<%= admin_cars_path %>" class="sidebar-link">
+      <span class="icon-holder"><i class="fas fa-car li-nav-cars " ></i></span>
+      <span class="title">Cars</span>
+    </a>
+    </li>
+    <li class="nav-item"> <a href="<%= admin_customers_path %>" class="sidebar-link">
+      <span class="icon-holder"><i class="fas fa-users li-nav-customers "></i></span>
+      <span class="title">Customers</span>
+    </a>
+    </li>
+    <li class="nav-item"> <a href="<%= admin_orders_path %>" class="sidebar-link">
+      <span class="icon-holder"><i class="fas fa-file li-nav-orders "></i></span>
+      <span class="title">Orders</span>
+    </a>
+    </li>
+  </ul>
+</div>
+</div>
