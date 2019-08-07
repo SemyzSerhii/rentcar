@@ -1,36 +1,67 @@
 .size_new {
-  margin: 2rem 35rem 5rem 35rem;
-  color: black;
+  padding: 7rem 20rem 22.5rem 35rem;
+  color: #313435;
   text-align: center;
+  background-color: #f9fafb!important;
+}
+
+.form-new {
+  padding: 1.5rem ;
+  background-color: #fff;
+  border: 1px solid rgba(0,0,0,.0625);
+  border-radius: 0.25rem;
+}
+
+.form-group-new {
+  padding-top: 3rem;
+}
+
+.logo-form {
+  padding-top: 1rem;
+}
+
+.logo-new {
+  float: left;
+  margin-bottom: 1rem;
+}
+
+.label {
+  float: left;
+  color: #72777a;
+}
+
+form input.image-salon {
+  background-color: #fff;
+  color: #72777a;
+  margin-bottom: 1rem;
+  width: 100%;
+  border-radius: 0.5rem;
+  border: 1px solid rgba(0,0,0,.0625);
+}
+
+.borders-new-salon {
+  border-radius: 0.5rem;
+  background-color: #fff;
+  border-color: rgba(0,0,0,.0625);
+}
+
+.butt-height {
+  height: 2rem;
 }
 
 .button-salon-new {
-  border-color: black;
-  background-color: gray;
-  color: black;
-  border-radius: 1.5rem;
+  border-radius: 0.5rem;
   margin-bottom: 1rem;
   margin-top: 1rem;
-  width: 20rem;
+  background-color: #f9fafb;
+  color: black;
+  border: 1px solid rgba(0,0,0,.0625);
+  float: left;
 }
 
 form button.button-salon-new:hover {
-  background: lightgrey;
-  border-color: black;
+  background: whitesmoke;
   color: black;
+  border: 1px solid rgba(0,0,0,.0625);
 }
 
-form input.button-salon-new:hover {
-  background: lightgrey;
-  border-color: black;
-  color: black;
-}
-
-form input.button-salon {
-  background-color: gray;
-  color: black;
-  margin-bottom: 1rem;
-  width: 17rem;
-  border-radius: 1rem;
-  border: 1px solid black;
-}
