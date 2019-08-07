@@ -1,8 +1,61 @@
+.index-salons {
+  padding-top: 0;
+  padding-left: 17.5rem;
+}
+
+.table-tb {
+  padding: 3rem 3rem 1.5rem 3rem;
+  background-color: #f9fafb!important;
+}
+
+.table-logo {
+  padding: 1rem;
+  background-color: #fff;
+  border: 1px solid rgba(0,0,0,.0625);
+  border-radius: 0.25rem;
+}
+
+.log {
+  margin-bottom: 1rem;
+}
+
+.logo {
+  float: left;
+  margin-bottom: 1rem;
+}
+
+.link-new {
+  padding-top: 0.5rem;
+  float: right;
+  margin-bottom: 1rem;
+}
+
+.new-salon {
+  text-decoration: none;
+  background-color: #f9fafb;
+  color: black;
+  padding: 0.55rem 1.5rem 0.55rem 1.5rem;
+  border: 1px solid rgba(0,0,0,.0625);
+  border-radius: 1rem;
+}
+
+a.new-salon:hover {
+  background: whitesmoke;
+  color: black;
+  text-decoration: none;
+}
+
 .margin_table {
-  margin-top: 5rem;
-  margin-right: 10rem;
-  margin-left: 10rem;
-  width: 70rem;
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid rgba(0,0,0,.0625);
+  color: #2E2F30;
+  border-radius: 0.25rem;
+}
+
+td.image-padding {
+  padding: 0;
+  width: 10rem;
 }
 
 .image_salons {
@@ -10,30 +63,11 @@
   height: 7rem;
 }
 
-.new-salon {
-  text-decoration: none;
-  background-color: gray;
-  color: black;
-  padding: 0.55rem 1.5rem 0.55rem 1.5rem;
-  border: 1px solid black;
-  border-radius: 1rem;
+.salon-hover:hover {
+  background-color: whitesmoke;
 }
 
-a.new-salon:hover {
-  background: lightgrey;
-  color: black;
-  text-decoration: none;
+.table {
+  margin-bottom: 0;
 }
 
-.margin_new {
-  margin-top: 1.5rem;
-  margin-right: 1rem;
-  float: right;
-}
-
-.table-dark {
-  background-color: slategrey;
-  border: 1px solid #454d55;
-  color: #2E2F30;
-  margin-bottom: 2rem;
-}
