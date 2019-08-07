@@ -63,6 +63,10 @@ td.image-padding {
   height: 7rem;
 }
 
+.width-name {
+  width: 15rem;
+}
+
 .salon-hover:hover {
   background-color: whitesmoke;
 }
