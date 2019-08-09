@@ -42,27 +42,5 @@
   padding: 0.626rem;
 }
 
-.link-show-customer {
-  display: grid;
-  padding: 0 0 30rem 1rem;
-}
 
-.button_show {
-  text-decoration: none;
-  background-color: #f9fafb;
-  color: black;
-  padding: 0.55rem 1.5rem 0.55rem 1.5rem;
-  border: 1px solid rgba(0,0,0,.0625);
-  border-radius: 0.5rem;
-}
-
-a.button_show:hover {
-  background: whitesmoke;
-  color: black;
-  text-decoration: none;
-}
-
-.button-margin {
-  margin:  0 0.5rem 0.5rem 0.5rem;
-}
 
