@@ -1,0 +1,30 @@
+<div class="index-customers">
+  <main class="table-tb">
+    <div class="table-logo">
+      <div class="logo">
+        <h4>Customers Table</h4>
+      </div>
+      <table class="table table-bordered margin_table">
+        <thead>
+        <tr>
+          <th scope="col">Id</th>
+          <th scope="col">Image</th>
+          <th scope="col">Name</th>
+          <th scope="col">Email</th>
+          <th scope="col">Admin</th>
+          <th scope="col">Created at</th>
+          <th scope="col">Updated at</th>
+        </tr>
+        </thead>
+        <tbody>
+        <% @customers.each do |customer| %>
+          <tr onclick="window.location.href='<%= admin_customer_path(customer) %>'; return false"
+              class="customer-hover">
+            <%= render customer %>
+          </tr>
+        <% end %>
+        </tbody>
+      </table>
+    </div>
+  </main>
+</div>

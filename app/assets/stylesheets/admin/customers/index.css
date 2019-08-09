@@ -1,0 +1,56 @@
+.index-customers {
+  padding-top: 0;
+  padding-left: 17.5rem;
+}
+
+.table-tb {
+  padding: 3rem 3rem 1.5rem 3rem;
+  background-color: #f9fafb!important;
+}
+
+.table-logo {
+  padding: 1rem;
+  background-color: #fff;
+  border: 1px solid rgba(0,0,0,.0625);
+  border-radius: 0.25rem;
+}
+
+.log {
+  margin-bottom: 1rem;
+}
+
+.logo {
+  float: left;
+  margin-bottom: 1rem;
+}
+
+.margin_table {
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid rgba(0,0,0,.0625);
+  color: #2E2F30;
+  border-radius: 0.25rem;
+}
+
+td.image-padding {
+  padding: 0;
+  width: 10rem;
+}
+
+.image_customer {
+  width: 10rem;
+  height: 7rem;
+}
+
+.width-name {
+  width: 15rem;
+}
+
+.customer-hover:hover {
+  background-color: whitesmoke;
+}
+
+.table {
+  margin-bottom: 0;
+}
+

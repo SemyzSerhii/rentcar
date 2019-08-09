@@ -1,0 +1,28 @@
+<div class="media size-customers-show">
+  <main class="show-maim">
+    <div class="show-display">
+      <div class="image-show">
+        <% if @customer.picture.present? %>
+          <%= image_tag @customer.picture.url.url, class: 'media-object image-wid-hei-show '%>
+        <% else %>
+          <img src="https://www.driversupport.com/wp-content/uploads/2018/04/Placeholder.gif"
+               alt=" media-object image" class="image-wid-hei-show ">
+        <% end %>
+      </div>
+      <div class="show-table">
+        <table class="table table-bordered">
+          <thead>
+          </thead>
+          <tbody>
+          <tr><td>Id:</td><td><%= @customer.id %></td></tr>
+          <tr><td>Name:</td><td><%= @customer.name %></td></tr>
+          <tr><td>Email:</td><td><%= @customer.email %></td></tr>
+          <tr><td>Admin:</td><td><%= @customer.admin %></td></tr>
+          <tr><td>Created At:</td><td><%= @customer.created_at%></td></tr>
+          <tr><td>Updated At:</td><td><%= @customer.updated_at%></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </main>
+</div>

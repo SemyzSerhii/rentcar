@@ -1,0 +1,15 @@
+<th scope="row"><%=customer.id %></th>
+<% if customer.picture.present? %>
+  <td class="image-padding "><%= image_tag customer.picture.url.url, class: 'image_customer'%></td>
+<% else %>
+  <td class="image-padding ">
+    <img src="https://www.driversupport.com/wp-content/uploads/2018/04/Placeholder.gif"
+         alt="image" class="image_customer">
+  </td>
+<% end %>
+<td class="width-name"><%= customer.name%></td>
+<td><%=customer.email%></td>
+<td><%=customer.admin%></td>
+<td><%=customer.created_at%></td>
+<td><%=customer.updated_at%></td>
+
