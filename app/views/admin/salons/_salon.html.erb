@@ -1,5 +1,4 @@
-<a href="<%= admin_salon_path(salon) %>">
-  <th scope="row"><%=salon.id %></th>
+ <th scope="row"><%=salon.id %></th>
   <% if salon.picture.present? %>
     <td class="image-padding "><%= image_tag salon.picture.url.url, class: 'image_salons'%></td>
   <% else %>
@@ -11,4 +10,3 @@
   <td class="width-name"><%= salon.name%></td>
   <td><%=salon.created_at%></td>
   <td><%=salon.updated_at%></td>
-</a>

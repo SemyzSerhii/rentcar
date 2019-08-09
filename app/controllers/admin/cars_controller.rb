@@ -1,5 +1,11 @@
 class Admin::CarsController < Admin::AdminController
-  before_action :find_car, only: %i[edit update destroy]
+  before_action :find_car, only: %i[show edit update destroy]
+
+  def index
+    @cars = Car.all
+  end
+
+  def show; end
 
   def new
     @car = Car.new
@@ -7,16 +13,27 @@ class Admin::CarsController < Admin::AdminController
 
   def create
     @car = Car.create(cars_params)
+    if @car.save
+      redirect_to admin_cars_path
+    else
+      render :new
+    end
   end
 
   def edit; end
 
   def update
-    @car = Car.update(cars_params)
+    if @car.update_attributes(cars_params)
+      redirect_to admin_cars_path
+    else
+      render :edit
+    end
   end
 
   def destroy
-    @car.destroy
+    if @car.destroy
+      redirect_to admin_cars_path
+    end
   end
 
   private
@@ -26,6 +43,8 @@ class Admin::CarsController < Admin::AdminController
   end
 
   def cars_params
-    params.require(:car).permit(:name, :color, :fuel_type, :age, :engine, :enum_status)
+    params.require(:car).permit(
+      :id, :brand, :model, :color, :fuel_type, :age, :engine, :enum_status, :salon_id, picture_attributes: %i[id url]
+    )
   end
 end

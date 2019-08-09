@@ -1,0 +1,20 @@
+<th scope="row"><%=car.id %></th>
+<% if car.picture.present? %>
+  <td class="image-padding "><%= image_tag car.picture.url.url, class: 'image_car'%></td>
+<% else %>
+  <td class="image-padding ">
+    <img src="https://www.driversupport.com/wp-content/uploads/2018/04/Placeholder.gif"
+         alt="image" class="image_car">
+  </td>
+<% end %>
+<td class="width-name"><%= car.brand%></td>
+<td><%=car.model%></td>
+<td><%=car.color%></td>
+<td><%=car.fuel_type%></td>
+<td><%=car.age%></td>
+<td><%=car.engine%></td>
+<td><%=car.enum_status%></td>
+<td><%=car.salon_id%></td>
+<td><%=car.created_at%></td>
+<td><%=car.updated_at%></td>
+
