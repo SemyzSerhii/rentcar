@@ -1,0 +1,59 @@
+<div class="size_new">
+  <main class="form-new">
+    <h6 class="logo-new">New сar form</h6>
+    <div class="form-group form-group-new">
+      <%= form_for [:admin, @car], class: 'md-form' do |f| %>
+        <%= render 'errors' %>
+        <%= f.fields_for :picture, @car.picture || @car.build_picture do |ff| %>
+          <%= ff.label :url, 'Image', class: 'label' %>
+          <%= ff.file_field :url , class: 'image-car' %>
+          <small id="bodyHelp" class="form-text text-danger">
+            <%= @car.errors['picture.url'].join(', ') %>
+          </small>
+        <% end %>
+        <div class="field">
+          <%= f.label :brand, 'Brand', class: 'label' %>
+          <%= f.search_field :brand, required: true, autocomplete: 'brand', class: 'form-control borders-new-car',
+            placeholder: 'Enter the brand car' %>
+        </div>
+        <div class="field">
+          <%= f.label :model, 'Model', class: 'label' %>
+          <%= f.search_field :model, required: true, autocomplete: 'model', class: 'form-control borders-new-car',
+            placeholder: 'Enter the model car' %>
+        </div>
+        <div class="field">
+          <%= f.label :color, 'Color', class: 'label' %>
+          <%= f.search_field :color, required: true, autocomplete: 'color', class: 'form-control borders-new-car',
+            placeholder: 'Enter the color of the car' %>
+        </div>
+        <div class="field">
+          <%= f.label :engine, 'Engine car', class: 'label' %>
+          <%= f.number_field :engine, in: 1.0..10.0, step: 0.1, required: true, class: 'form-control borders-new-car'%>
+        </div>
+        <div class="field">
+          <%= f.label :fuel_type, 'Fuel type', class: 'label' %>
+          <%= f.select :fuel_type, Car.fuel_type.options, required: true, class: 'margin-fuel_type' %>
+        </div>
+        <div class="field">
+          <%= f.label :age, 'Age car', class: 'label' %>
+          <%= f.select :age, Car.age.options, required: true %>
+        </div>
+        <div class="field">
+          <%= f.label :salon_id, 'Name salon', class: 'label' %>
+          <%= f.select(:salon_id, Salon.all.collect {|u| [u.name, u.id]}, prompt: 'Name') %>
+        </div>
+        <div class="field">
+          <%= f.label :enum_status, 'Status free', class: 'label' %>
+          <%= f.radio_button :enum_status, true, class: 'margin-status-free'%>
+        </div>
+        <div class="field">
+          <%= f.label :enum_status, 'Status close', class: 'label' %>
+          <%= f.radio_button :enum_status, false, class: 'margin-status-close' %>
+        </div>
+        <div class="butt-height">
+          <%= f.submit 'Save', class: ' btn btn-primary button-car-new' %>
+        </div>
+      <% end %>
+    </div>
+  </main>
+</div>

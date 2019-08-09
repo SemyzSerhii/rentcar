@@ -30,7 +30,7 @@
   color: #72777a;
 }
 
-form input.image-salon {
+form input.image-car {
   background-color: #fff;
   color: #72777a;
   margin-bottom: 1rem;
@@ -39,17 +39,29 @@ form input.image-salon {
   border: 1px solid rgba(0,0,0,.0625);
 }
 
-.borders-new-salon {
+.borders-new-car {
   border-radius: 0.5rem;
   background-color: #fff;
   border-color: rgba(0,0,0,.0625);
+}
+
+.margin-status-free {
+  margin-right: 72px;
+}
+
+.margin-status-close {
+  margin-right: 83px;
+}
+
+select#car_fuel_type {
+  margin-left: 20px;
 }
 
 .butt-height {
   height: 2rem;
 }
 
-.button-salon-new {
+.button-car-new {
   border-radius: 0.5rem;
   margin-bottom: 1rem;
   margin-top: 1rem;
@@ -59,7 +71,7 @@ form input.image-salon {
   float: left;
 }
 
-form button.button-salon-new:hover {
+form button.button-car-new:hover {
   background: whitesmoke;
   color: black;
   border: 1px solid rgba(0,0,0,.0625);

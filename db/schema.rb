@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_08_04_151514) do
+ActiveRecord::Schema.define(version: 2019_08_09_092403) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -18,12 +18,14 @@ ActiveRecord::Schema.define(version: 2019_08_04_151514) do
   create_table "cars", force: :cascade do |t|
     t.string "color"
     t.string "fuel_type"
-    t.integer "age"
+    t.string "age"
     t.float "engine"
     t.boolean "enum_status"
     t.bigint "salon_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.string "brand"
+    t.string "model"
     t.index ["salon_id"], name: "index_cars_on_salon_id"
   end
 

@@ -1,0 +1,37 @@
+<div class="index-cars">
+  <main class="table-tb">
+    <div class="table-logo">
+      <div class="logo">
+        <h4>Cars Table</h4>
+      </div>
+      <div class="link-new">
+        <%= link_to 'New car', new_admin_car_path, class: 'new-car' %>
+      </div>
+      <table class="table table-bordered margin_table">
+        <thead>
+        <tr>
+          <th scope="col">Id</th>
+          <th scope="col">Image</th>
+          <th scope="col">Brand</th>
+          <th scope="col">Model</th>
+          <th scope="col">Color</th>
+          <th scope="col">Fuel type</th>
+          <th scope="col">Age</th>
+          <th scope="col">Engine</th>
+          <th scope="col">Status</th>
+          <th scope="col">Salon id</th>
+          <th scope="col">Created at</th>
+          <th scope="col">Updated at</th>
+        </tr>
+        </thead>
+        <tbody>
+        <% @cars.each do |car| %>
+          <tr onclick="window.location.href='<%= admin_car_path(car) %>'; return false" class="car-hover">
+            <%= render car %>
+          </tr>
+        <% end %>
+        </tbody>
+      </table>
+    </div>
+  </main>
+</div>

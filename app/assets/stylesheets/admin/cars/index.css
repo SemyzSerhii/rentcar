@@ -1,4 +1,4 @@
-.index-salons {
+.index-cars {
   padding-top: 0;
   padding-left: 17.5rem;
 }
@@ -30,7 +30,7 @@
   margin-bottom: 1rem;
 }
 
-.new-salon {
+.new-car {
   text-decoration: none;
   background-color: #f9fafb;
   color: black;
@@ -39,7 +39,7 @@
   border-radius: 1rem;
 }
 
-a.new-salon:hover {
+a.new-car:hover {
   background: whitesmoke;
   color: black;
   text-decoration: none;
@@ -58,7 +58,7 @@ td.image-padding {
   width: 10rem;
 }
 
-.image_salons {
+.image_car {
   width: 10rem;
   height: 7rem;
 }
@@ -67,7 +67,7 @@ td.image-padding {
   width: 15rem;
 }
 
-.salon-hover:hover {
+.car-hover:hover {
   background-color: whitesmoke;
 }
 

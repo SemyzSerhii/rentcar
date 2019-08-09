@@ -15,6 +15,8 @@ class Admin::SalonsController < Admin::AdminController
     @salon = Salon.create(salons_params)
     if @salon.save
       redirect_to admin_salons_path
+    else
+      render :new
     end
   end
 
@@ -24,7 +26,7 @@ class Admin::SalonsController < Admin::AdminController
     if @salon.update_attributes(salons_params)
       redirect_to admin_salons_path
     else
-      :edit
+      render :edit
     end
   end
 

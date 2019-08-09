@@ -7,7 +7,18 @@
 @import "stylesheets/admin/salons/index";
 @import "stylesheets/admin/salons/form";
 @import "stylesheets/admin/salons/show";
+@import "stylesheets/admin/navbar_admin";
+@import "stylesheets/admin/cars/index";
+@import "stylesheets/admin/cars/form";
+@import "stylesheets/admin/cars/show";
 
 body {
   background-color: darkgrey;
+}
+
+body, h1, h2, h3, h4, h5, h6 {
+  font-family: Roboto,-apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Oxygen,Ubuntu,Cantarell,Fira Sans,
+  Droid Sans,Helvetica Neue,Arial,sans-serif;
+  line-height: 1.5;
+  letter-spacing: .7px;
 }

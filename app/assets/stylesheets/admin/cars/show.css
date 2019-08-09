@@ -1,4 +1,4 @@
-.size-salons-show {
+.size-cars-show {
   padding: 2rem 2rem 17rem 20rem;
   background-color: #f9fafb;
 }
@@ -42,9 +42,9 @@
   padding: 0.626rem;
 }
 
-.link-show {
+.link-show-car {
   display: grid;
-  padding: 0 0 10rem 1rem;
+  padding: 0 0 30rem 1rem;
 }
 
 .button_show {

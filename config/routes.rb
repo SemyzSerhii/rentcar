@@ -6,6 +6,8 @@ Rails.application.routes.draw do
   namespace :admin do
     resources :salons
     resources :cars
+    resources :customers
+    resources :orders
 
     root 'admin#index'
   end

@@ -1,0 +1,37 @@
+<div class="media size-cars-show">
+  <main class="show-maim">
+    <div class="show-display">
+      <div class="image-show">
+        <% if @car.picture.present? %>
+          <%= image_tag @car.picture.url.url, class: 'media-object image-wid-hei-show '%>
+        <% else %>
+          <img src="https://www.driversupport.com/wp-content/uploads/2018/04/Placeholder.gif"
+               alt=" media-object image" class="image-wid-hei-show ">
+        <% end %>
+      </div>
+      <div class="show-table">
+        <table class="table table-bordered">
+          <thead>
+          </thead>
+          <tbody>
+          <tr><td>Id:</td><td><%= @car.id %></td></tr>
+          <tr><td>Salon id:</td><td><%= @car.salon_id %></td></tr>
+          <tr><td>Brand:</td><td><%= @car.brand %></td></tr>
+          <tr><td>Model:</td><td><%= @car.model %></td></tr>
+          <tr><td>Age:</td><td><%= @car.age %></td></tr>
+          <tr><td>Color:</td><td><%= @car.color %></td></tr>
+          <tr><td>Fuel type:</td><td><%= @car.fuel_type %></td></tr>
+          <tr><td>Engine:</td><td><%= @car.engine %></td></tr>
+          <tr><td>Status:</td><td><%= @car.enum_status %></td></tr>
+          <tr><td>Created At:</td><td><%= @car.created_at%></td></tr>
+          <tr><td>Updated At:</td><td><%= @car.updated_at%></td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="link-show-car">
+        <%= link_to 'Edit', edit_admin_car_path(@car), class: 'button_show button-margin' %>
+        <%= link_to 'Delete', admin_car_path, method: :delete, class: 'button_show button-margin' %>
+      </div>
+    </div>
+  </main>
+</div>
