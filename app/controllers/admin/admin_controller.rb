@@ -6,7 +6,7 @@ class Admin::AdminController < ApplicationController
   end
 
 
-private
+  private
   def must_be_admin
     unless current_customer && current_customer.admin?
       redirect_to root_path, notice: "Your admin?"
