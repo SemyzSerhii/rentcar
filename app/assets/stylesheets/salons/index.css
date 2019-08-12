@@ -1,6 +1,6 @@
 .salons-positions {
   display: flex;
-  padding: 3rem;
+  padding: 0 3rem 3rem 3rem;
   flex-wrap: wrap;
 }
 
