@@ -1,22 +1,25 @@
 <%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
-  <div class="size_fr">
-    <form>
-      <div class="form-group">
-        <img src="https://image.flaticon.com/icons/svg/74/74472.svg" class="image_fr">
-        <h2>Forgot your password?</h2>
-        <%= render 'devise/shared/error_messages', resource: resource %>
-        <div class="field_fr">
-          <%= f.email_field :email, autofocus: true, autocomplete: 'email',  class: 'form-control borders_fr',
+  <%= render 'devise/shared/error_messages', resource: resource %>
+  <div class="size-forgot-customer ">
+    <main class="form-forgot-customer ">
+      <div>
+        <i class="far fa-user image-forgot"></i>
+        <h2 class="label-forgot">Forgot your password?</h2>
+        <div class="field">
+          <%= f.email_field :email, autofocus: true, autocomplete: 'email',
+            class: 'form-control borders-forgot-customer',
             placeholder: 'Enter your email' %>
         </div>
-        <div class="actions">
-          <%= button_tag 'Reset password ', class: 'btn btn-primary buttons_fr' %>
+        <div class="butt-height-forgot">
+          <%= button_tag 'Reset password ', class: 'btn button-customer-forgot' %>
         </div>
-        <%= link_to 'Sign up', new_customer_registration_path, class: 'sign_up_fr'%>
+        <div class="butt-height-forgot">
+          <%= link_to 'Sign up', new_customer_registration_path, class: 'btn button-customer-link-forgot'%>
+        </div>
       </div>
-      <div class="fr_div">
-        <%= link_to 'Log in', customer_session_path, class: 'log_in_fr'%>
+      <div class="butt-height-forgot">
+        <%= link_to 'Log in', customer_session_path, class: 'btn button-customer-link-forgot link-login'%>
       </div>
-    </form>
+    </main>
   </div>
 <% end %>
