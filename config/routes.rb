@@ -1,6 +1,10 @@
 Rails.application.routes.draw do
   devise_for :customers
 
+  resources :salons do
+    resources :cars
+  end
+
   root 'salons#index'
 
   namespace :admin do

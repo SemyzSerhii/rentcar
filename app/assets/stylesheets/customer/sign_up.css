@@ -1,51 +1,83 @@
-.size {
-  margin: 5rem 35rem 10rem 35rem;
-  color: black;
+.size-new-customer {
+  padding: 0.5rem 30rem 2rem 30rem;
+  color: #313435;
   text-align: center;
+  background-color: #f9fafb!important;
 }
 
-.borders {
-  border-radius: 1rem;
-  background-color: lightgrey;
-  border-color: black;
+.form-new-customer {
+  padding: 1.5rem ;
+  background-color: #fff;
+  border: 1px solid rgba(0,0,0,.0625);
+  border-radius: 0.25rem;
 }
 
-.buttons {
-  border-color: black;
-  background-color: gray;
-  color: black;
-  border-radius: 1.5rem;
-  margin-top: 2rem;
+.image-sign-up {
+ font-size: 10rem;
+}
+
+.label-sign-up {
+  color: #313435;
+}
+
+.label {
+  float: left;
+  color: #72777a;
+}
+
+form input.image-customer-new {
+  background-color: #fff;
+  color: #72777a;
   margin-bottom: 1rem;
-  width: 20rem;
-}
-
-form button.buttons:hover {
-  background: lightgrey;
-  border-color: black;
-  color: black;
+  width: 100%;
+  border-radius: 0.5rem;
+  border: 1px solid rgba(0,0,0,.0625);
 }
 
 .field {
   margin-bottom: 0.5rem;
 }
 
-.image {
-  width: 5rem;
-  height: 6rem;
+.borders-new-customer {
+  border-radius: 0.5rem;
+  background-color: #fff;
+  border-color: rgba(0,0,0,.0625);
 }
 
-.log_in {
-  text-decoration: none;
-  background-color: gray;
-  color: black;
-  padding: 0.55rem 7.1rem 0.55rem 7.1rem;
-  border: 1px solid black;
-  border-radius: 1.5rem;
+.butt-height-new {
+  height: 4rem;
 }
 
-form a.log_in:hover {
-  background: lightgrey;
+.button-customer-new {
+  border-radius: 0.5rem;
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
+  background-color: #f9fafb;
   color: black;
-  text-decoration: none;
+  border: 1px solid rgba(0,0,0,.0625);
+  float: left;
+}
+
+.button-customer-link {
+  border-radius: 0.5rem;
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
+  background-color: #f9fafb;
+  color: black;
+  border: 1px solid rgba(0,0,0,.0625);
+  float: left;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+form button.button-customer-new:hover {
+  background: whitesmoke;
+  color: black;
+  border: 1px solid rgba(0,0,0,.0625);
+}
+
+a.button-customer-link:hover{
+  background: whitesmoke;
+  color: black;
+  border: 1px solid rgba(0,0,0,.0625);
 }

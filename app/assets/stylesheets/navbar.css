@@ -1,7 +1,72 @@
-.navbar-nav {
-  flex-direction: row;
+.navbar-1 {
+  background-color: #fff;
+  padding: 0;
+  border-bottom: 1px solid rgba(0,0,0,.0625);
+  width: 100%;
+}
+
+.navbar-brand-1 {
+  color: #2E2F30 !important;
+  padding: 1.7rem 3rem 0.5rem 3rem
+}
+
+#demoFont-1 {
+  font-family: "Lucida Console", Monaco, monospace;
+  font-size: 25px;
+  letter-spacing: 2px;
+  word-spacing: 2px;
+  color: #000000;
+  font-weight: 700;
+  text-decoration: none;
+  font-style: italic;
+  font-variant: normal;
+  text-transform: uppercase;
+}
+
+.sidebar-logo-1 {
+  border-right: 1px solid rgba(0,0,0,.0625);
+  line-height: 0;
+  padding: 30px 20px;
+  -webkit-transition: all .2s ease;
+  -o-transition: all .2s ease;
+  transition: all .2s ease;
+  height: 53.9px;
+}
+
+.position-body-navbar {
+  float: right;
+  height: 54px;
 }
 
 .link {
-  margin: 0 0.5rem 0 0.5rem;
+  float: left;
+  display: flex;
+}
+
+.nav-link {
+  padding: 1rem 1rem;
+  border-left: 1px solid rgba(0,0,0,.0625);
+}
+
+.link-color {
+  color: #2E2F30 !important;
+}
+
+.customer-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  border: 3px solid white;
+  box-shadow: 1.5px 8px 11px -9px #000000;
+  margin-right: 10px;
+}
+
+.name-customer {
+  padding-top: 0.8rem;
+  padding-right: 1rem;
+}
+
+.navbar-nav .nav-link {
+  padding-right: 1rem;
+  padding-left: 1rem;
 }

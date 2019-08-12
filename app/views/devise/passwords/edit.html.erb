@@ -1,30 +1,30 @@
 <%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :put }) do |f| %>
   <%= render 'devise/shared/error_messages', resource: resource %>
   <%= f.hidden_field :reset_password_token %>
-  <div class="size_rs">
-    <form>
-      <div class="form-group">
-        <img src="https://image.flaticon.com/icons/svg/74/74472.svg" class="image_rs">
-        <h2>Change your password</h2>
-        <div class="field_rs">
+  <div class="size-reset-customer">
+    <main class="form-reset-customer">
+      <div>
+        <i class="far fa-user image-reset"></i>
+        <h2 class="label-reset">Change your password</h2>
+        <div class="field">
           <%= f.password_field :password, autofocus: true, autocomplete: 'new-password',
-            placeholder: 'Enter your new password', class: 'form-control borders_rs' %>
+            placeholder: 'Enter your new password', class: 'form-control borders-reset-customer' %>
         </div>
-
-        <div class="field_rs">
+        <div class="field">
           <%= f.password_field :password_confirmation, autocomplete: 'off', placeholder: 'Password confirmation',
-            class: 'form-control borders_rs'%>
+            class: 'form-control borders-reset-customer'%>
         </div>
-
-        <div class="actions">
-          <%= button_tag 'Change my password', class: 'btn btn-primary buttons_rs' %>
+        <div class="butt-height-reset">
+          <%= button_tag 'Change my password', class: 'btn button-customer-reset' %>
         </div>
-        <%= link_to 'Sign up', new_customer_registration_path, class: 'sign_up_rs'%>
+        <div class="butt-height-reset">
+          <%= link_to 'Sign up', new_customer_registration_path, class: 'btn button-customer-link-reset'%>
+        </div>
       </div>
-      <div class="rs_div">
-        <%= link_to 'Log in', customer_session_path, class: 'log_in_rs'%>
+      <div class="butt-height-reset">
+        <%= link_to 'Log in', customer_session_path, class: ' btn button-customer-link-reset link-login'%>
       </div>
-    </form>
+    </main>
   </div>
 <% end %>
 

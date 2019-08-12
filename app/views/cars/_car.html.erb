@@ -1,0 +1,40 @@
+<div class="car-positions car-hover">
+  <main class="main-car">
+    <div class="car">
+      <div>
+        <% if car.picture.present? %>
+          <%= image_tag car.picture.url.url, class: 'image-size' %>
+        <% else %>
+          <%= image_tag 'https://www.driversupport.com/wp-content/uploads/2018/04/Placeholder.gif', class: 'image-size' %>
+        <% end %>
+      </div>
+      <div>
+        <div id="container" >
+          <h3 class="car-name">
+            <%= car.brand %>
+            <%= car.model %>
+          </h3>
+          <div class="points-position">
+          <p class="car-points">Color:</p> <p class="points color-points"><%= car.color %></p>
+          </div>
+          <div class="points-position">
+            <p class="car-points">Age:</p> <p class="points color-points"> <%=car.age %></p>
+          </div>
+          <div class="points-position">
+          <p class="car-points">Engine:</p> <p class="points color-points"> <%= car.engine %></p>
+          </div>
+          <div class="points-position">
+          <p class="car-points">Fuel type:</p> <p class="points color-points"> <%= car.fuel_type %></p>
+          </div>
+          <div class="points-position">
+            <% if car.enum_status? %>
+              <p class="car-points"> Status:</p><p class="points status-free">free</p>
+            <% else %>
+              <p class="car-points"> Status:</p><p class="points status-close">close</p>
+            <%end %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</div>

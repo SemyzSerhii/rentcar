@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_08_09_092403) do
+ActiveRecord::Schema.define(version: 2019_08_09_145019) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -53,14 +53,12 @@ ActiveRecord::Schema.define(version: 2019_08_09_092403) do
   end
 
   create_table "orders", force: :cascade do |t|
-    t.string "name"
-    t.integer "phone"
     t.bigint "cars_id"
-    t.bigint "salons_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.bigint "customers_id"
     t.index ["cars_id"], name: "index_orders_on_cars_id"
-    t.index ["salons_id"], name: "index_orders_on_salons_id"
+    t.index ["customers_id"], name: "index_orders_on_customers_id"
   end
 
   create_table "salons", force: :cascade do |t|
@@ -73,6 +71,6 @@ ActiveRecord::Schema.define(version: 2019_08_09_092403) do
 
   add_foreign_key "cars", "salons"
   add_foreign_key "orders", "cars", column: "cars_id"
-  add_foreign_key "orders", "salons", column: "salons_id"
+  add_foreign_key "orders", "customers", column: "customers_id"
   add_foreign_key "salons", "cars", column: "cars_id"
 end

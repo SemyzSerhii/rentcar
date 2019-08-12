@@ -11,9 +11,14 @@
 @import "stylesheets/admin/cars/index";
 @import "stylesheets/admin/cars/form";
 @import "stylesheets/admin/cars/show";
+@import "stylesheets/admin/customers/index";
+@import "stylesheets/admin/customers/show";
+@import "stylesheets/admin/orders/index";
+@import "stylesheets/salons/index";
+@import "stylesheets/cars/index";
 
 body {
-  background-color: darkgrey;
+  background-color: #f9fafb;
 }
 
 body, h1, h2, h3, h4, h5, h6 {

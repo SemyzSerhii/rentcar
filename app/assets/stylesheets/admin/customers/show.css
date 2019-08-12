@@ -1,0 +1,46 @@
+.size-customers-show {
+  padding: 2rem 2rem 17rem 20rem;
+  background-color: #f9fafb;
+}
+
+.show-maim {
+  padding: 2rem;
+  border: 1px solid lightgrey;
+  border-radius: 0.25rem;
+  background-color: #fff;
+}
+
+.show-display{
+  display: flex;
+}
+
+.image-show{
+  margin-right: 1rem;
+  width: 45%;
+  height: 16rem;
+  padding: 0.5rem;
+  border: 1px solid lightgrey;
+  border-radius: 0.25rem;
+  background-color: #fff;
+}
+
+.image-wid-hei-show {
+  width: 100%;
+  height: 100%;
+}
+
+.show-table {
+  width: 40%;
+  height: 20%;
+  padding: 0.5rem;
+  border: 1px solid lightgrey;
+  border-radius: 0.25rem;
+  background-color: #fff;
+}
+
+.table td {
+  padding: 0.626rem;
+}
+
+
+

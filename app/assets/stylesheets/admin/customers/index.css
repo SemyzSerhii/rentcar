@@ -1,4 +1,4 @@
-.index-salons {
+.index-customers {
   padding-top: 0;
   padding-left: 17.5rem;
 }
@@ -24,27 +24,6 @@
   margin-bottom: 1rem;
 }
 
-.link-new {
-  padding-top: 0.5rem;
-  float: right;
-  margin-bottom: 1rem;
-}
-
-.new-salon {
-  text-decoration: none;
-  background-color: #f9fafb;
-  color: black;
-  padding: 0.55rem 1.5rem 0.55rem 1.5rem;
-  border: 1px solid rgba(0,0,0,.0625);
-  border-radius: 1rem;
-}
-
-a.new-salon:hover {
-  background: whitesmoke;
-  color: black;
-  text-decoration: none;
-}
-
 .margin_table {
   width: 100%;
   background-color: #fff;
@@ -58,7 +37,7 @@ td.image-padding {
   width: 10rem;
 }
 
-.image_salons {
+.image_customer {
   width: 10rem;
   height: 7rem;
 }
@@ -67,7 +46,7 @@ td.image-padding {
   width: 15rem;
 }
 
-.salon-hover:hover {
+.customer-hover:hover {
   background-color: whitesmoke;
 }
 

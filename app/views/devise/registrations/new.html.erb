@@ -1,32 +1,42 @@
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
   <%= render 'devise/shared/error_messages', resource: resource %>
-  <div class="size">
-    <form>
-      <div class="form-group">
-        <img src="https://image.flaticon.com/icons/svg/74/74472.svg" class="image">
-        <h2>Sign up</h2>
+  <div class="size-new-customer">
+    <main class="form-new-customer">
+      <div>
+        <i class="far fa-user image-sign-up"></i>
+        <h2 class="label-sign-up">Sign up</h2>
+        <%= f.fields_for :picture, @customer.picture || @customer.build_picture do |ff| %>
+          <%= ff.label :url, 'Image', class: 'label' %>
+          <%= ff.file_field :url , class: 'image-customer-new' %>
+          <small id="bodyHelp" class="form-text text-danger">
+            <%= @customer.errors['picture.url'].join(', ') %>
+          </small>
+        <% end %>
         <div class="field">
-          <%= f.search_field :name, autofocus: true, autocomplete: 'name', class: 'form-control borders',
+          <%= f.search_field :name, autofocus: true, autocomplete: 'name', class: 'form-control borders-new-customer',
             placeholder: 'Enter your name' %>
         </div>
         <div class="field">
-          <%= f.email_field :email, autofocus: true, autocomplete: 'email', class: 'form-control borders',
+          <%= f.email_field :email, autofocus: true, autocomplete: 'email', class: 'form-control borders-new-customer',
             placeholder: 'Enter your email' %>
         </div>
         <div class="field">
-          <%= f.password_field :password, autocomplete: 'new-password', class: 'form-control borders',
+          <%= f.password_field :password, autocomplete: 'new-password', class: 'form-control borders-new-customer',
             placeholder: 'Enter your password' %>
         </div>
         <div class="field">
-          <%= f.password_field :password_confirmation, autocomplete: 'new-password', class: 'form-control borders',
+          <%= f.password_field :password_confirmation, autocomplete: 'new-password',
+            class: 'form-control borders-new-customer',
             placeholder: 'Password confirmation'%>
         </div>
-        <div class="actions">
-          <%= button_tag 'Sign up', class:'btn btn-primary buttons'%>
+        <div class="butt-height-new">
+          <%= button_tag 'Sign up', class: 'btn button-customer-new'%>
         </div>
-        <%= link_to 'Log in', customer_session_path, class: 'log_in'%>
+        <div class="butt-height-new">
+          <%= link_to 'Log in', customer_session_path, class: ' btn button-customer-link'%>
+        </div>
       </div>
-    </form>
+    </main>
   </div>
 <% end %>
 
