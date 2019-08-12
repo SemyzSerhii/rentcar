@@ -16,8 +16,6 @@
         </thead>
         <tbody>
         <% @orders.each do |order| %>
-          <tr onclick="window.location.href='<%= admin_order_path(order) %>'; return false"
-              class="order-hover">
             <%= render order %>
           </tr>
         <% end %>
