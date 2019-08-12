@@ -1,0 +1,19 @@
+<div class="salon-positions">
+  <main class="main-salon">
+    <div class="salon">
+      <div>
+  <% if salon.picture.present? %>
+  <%= image_tag salon.picture.url.url, class: 'image-size' %>
+    <% else %>
+    <%= image_tag 'https://www.driversupport.com/wp-content/uploads/2018/04/Placeholder.gif', class: 'image-size' %>
+  <% end %>
+      </div>
+      <div>
+        <h3  id="container" class="salon-name">
+        <%= salon.name %>
+        </h3>
+        <p class="rent-car">Сar rental around the clock, waiting for you!</p>
+      </div>
+    </div>
+  </main>
+</div>
