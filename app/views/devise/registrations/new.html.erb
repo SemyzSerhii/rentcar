@@ -3,8 +3,8 @@
   <div class="size_new">
     <main class="form-new">
       <div>
-        <i class="far fa-user image"></i>
-        <h2 class="labels">Sign up</h2>
+        <i class="far fa-user image-sign-up"></i>
+        <h2 class="label-sign-up">Sign up</h2>
         <%= f.fields_for :picture, @customer.picture || @customer.build_picture do |ff| %>
           <%= ff.label :url, 'Image', class: 'label' %>
           <%= ff.file_field :url , class: 'image-customer-new' %>
@@ -25,7 +25,8 @@
             placeholder: 'Enter your password' %>
         </div>
         <div class="field">
-          <%= f.password_field :password_confirmation, autocomplete: 'new-password', class: 'form-control borders-new-customer',
+          <%= f.password_field :password_confirmation, autocomplete: 'new-password',
+            class: 'form-control borders-new-customer',
             placeholder: 'Password confirmation'%>
         </div>
         <div class="butt-height-new">
