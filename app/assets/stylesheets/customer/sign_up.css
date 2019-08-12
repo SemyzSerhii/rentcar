@@ -1,11 +1,11 @@
-.size_new {
-  padding: 7rem 20rem 22.5rem 20rem;
+.size-new-customer {
+  padding: 5rem 26rem 5rem 26rem;
   color: #313435;
   text-align: center;
   background-color: #f9fafb!important;
 }
 
-.form-new {
+.form-new-customer {
   padding: 1.5rem ;
   background-color: #fff;
   border: 1px solid rgba(0,0,0,.0625);
