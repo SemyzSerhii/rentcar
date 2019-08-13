@@ -37,10 +37,8 @@
 h3.car-name {
   padding-top: 0.3rem;
   padding-left: 1rem;
-  font-size: 20px;
-  line-height: 40px;
+  font-size: 15px;
   font-family: fantasy, sans-serif;
-  font-weight: bold;
   float: left;
 }
 
@@ -63,7 +61,7 @@ h3.car-price {
   padding-left: 1rem;
 }
 
-#container-car {
+#container-car-1 {
   /*stitching*/
   outline: 1px dashed #98abb9;
   outline-offset: -5px;
@@ -72,6 +70,17 @@ h3.car-price {
   height: 200px;
   width: 50%;
 }
+
+#container-car-2 {
+  /*stitching*/
+  outline: 1px dashed #98abb9;
+  outline-offset: -5px;
+  display: grid;
+  background-color: rgba(0,0,0,.0625);
+  height: 200px;
+  width: 50%;
+}
+
 
 .car-hover:hover {
   background-color: lightgrey;

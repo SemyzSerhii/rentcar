@@ -1,0 +1,18 @@
+<div class="sort">
+    <p class="text-center">
+      Sort by Age:
+      <%= link_to sort_path('age_desc') do %>
+        <i class="fas fa-chevron-circle-down"></i>
+      <% end %>
+      <%= link_to sort_path('age') do %>
+        <i class="fas fa-chevron-circle-up"></i>
+      <% end %>
+      by Engine:
+      <%= link_to sort_path('engine_desc') do %>
+        <i class="fas fa-chevron-circle-down"></i>
+      <% end %>
+      <%= link_to sort_path('engine') do %>
+        <i class="fas fa-chevron-circle-up"></i>
+      <% end %>
+    </p>
+</div>

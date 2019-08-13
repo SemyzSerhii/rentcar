@@ -5,6 +5,7 @@ Rails.application.routes.draw do
     resources :cars
   end
 
+  get 'sort/:by' => 'cars#index', as: 'sort'
   root 'salons#index'
 
   namespace :admin do
