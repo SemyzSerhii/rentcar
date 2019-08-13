@@ -1,4 +1,6 @@
 class Car < ApplicationRecord
+  paginates_per 6
+
   extend Enumerize
 
   belongs_to :salon

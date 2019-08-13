@@ -4,7 +4,7 @@
 }
 
 .table-tb {
-  padding: 3rem 3rem 30rem 3rem;
+  padding: 3rem;
   background-color: #f9fafb!important;
 }
 
@@ -22,6 +22,31 @@
 .logo {
   float: left;
   margin-bottom: 1rem;
+}
+
+
+.paginate-customer-top {
+  padding-top: 4rem;
+  float: inherit;
+}
+
+.paginate-customer-bottom {
+  padding-top: 1rem;
+  float: inherit;
+}
+
+.page-link {
+  color: black;
+}
+
+.page-link:hover {
+  color: dimgrey;
+}
+
+.page-item.active .page-link {
+  color: black;
+  background-color: rgba(0,0,0,.0625);
+  border-color: rgba(0,0,0,.0625);
 }
 
 .margin_table {

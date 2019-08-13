@@ -7,6 +7,9 @@
       <div class="link-new">
         <%= link_to 'New salon', new_admin_salon_path, class: 'new-salon' %>
       </div>
+      <div class="paginate-salon-top">
+      <%= paginate @salons %>
+      </div>
       <table class="table table-bordered margin_table">
         <thead>
         <tr>
@@ -25,6 +28,9 @@
         <% end %>
         </tbody>
       </table>
+      <div class="paginate-salon-bottom">
+        <%= paginate @salons %>
+      </div>
     </div>
   </main>
 </div>

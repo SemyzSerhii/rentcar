@@ -1,6 +1,6 @@
 class SalonsController < ApplicationController
   def index
-    @salons = Salon.all
+    @salons = Salon.order(:name).page params[:page]
   end
 
   def show

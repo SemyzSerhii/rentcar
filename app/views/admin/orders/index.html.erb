@@ -4,6 +4,9 @@
       <div class="logo">
         <h4>Orders Table</h4>
       </div>
+      <div class="paginate-order-top">
+        <%= paginate @orders %>
+      </div>
       <table class="table table-bordered margin_table">
         <thead>
         <tr>
@@ -21,6 +24,9 @@
         <% end %>
         </tbody>
       </table>
+      <div class="paginate-order-bottom">
+        <%= paginate @orders %>
+      </div>
     </div>
   </main>
 </div>

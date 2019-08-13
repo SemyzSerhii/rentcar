@@ -61,3 +61,22 @@ h3.salon-name {
   background-color: lightgrey;
   border-radius: 0.25rem;
 }
+
+.paginate-salon-root {
+  padding-left: 4rem;
+  float: inherit;
+}
+
+.page-link {
+  color: black;
+}
+
+.page-link:hover {
+  color: dimgrey;
+}
+
+.page-item.active .page-link {
+  color: black;
+  background-color: rgba(0,0,0,.0625);
+  border-color: rgba(0,0,0,.0625);
+}

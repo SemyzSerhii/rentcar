@@ -1,5 +1,11 @@
+<div class="paginate-salon-root">
+  <%= paginate @salons %>
+</div>
 <div class="salons-positions">
 <% @salons.each do |salon| %>
   <%= render salon %>
 <% end %>
+</div>
+<div class="paginate-salon-root">
+  <%= paginate @salons %>
 </div>

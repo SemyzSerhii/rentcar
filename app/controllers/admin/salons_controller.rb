@@ -2,7 +2,7 @@ class Admin::SalonsController < Admin::AdminController
   before_action :find_salon, only: %i[ show edit update destroy]
 
   def index
-    @salons = Salon.all
+    @salons = Salon.order(:name).page params[:page]
   end
 
   def show; end

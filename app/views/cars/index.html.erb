@@ -1,5 +1,4 @@
 <div class="cars-positions">
-  <% @cars.each do |car| %>
-    <%= render car %>
-  <% end %>
+  <% render @cars %>
 </div>
+<%= paginate @cars %>
