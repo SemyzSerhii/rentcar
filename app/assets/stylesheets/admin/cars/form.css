@@ -71,7 +71,7 @@ select#car_fuel_type {
   float: left;
 }
 
-form button.button-car-new:hover {
+.button-car-new:hover {
   background: whitesmoke;
   color: black;
   border: 1px solid rgba(0,0,0,.0625);
