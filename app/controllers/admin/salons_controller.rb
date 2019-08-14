@@ -43,6 +43,6 @@ class Admin::SalonsController < Admin::AdminController
   end
 
   def salons_params
-    params.require(:salon).permit(:name, picture_attributes: %i[id url])
+    params.require(:salon).permit(:name, :car_id, picture_attributes: %i[id url])
   end
 end

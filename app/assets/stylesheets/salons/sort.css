@@ -1,0 +1,8 @@
+.link_sort {
+  color: #2E2F30;
+}
+
+.link_sort:hover {
+  color: dimgrey;
+  text-decoration: none;
+}

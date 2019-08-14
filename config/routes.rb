@@ -1,11 +1,9 @@
 Rails.application.routes.draw do
   devise_for :customers
 
-  resources :salons do
-    resources :cars
-  end
+  resources :salons
 
-  get 'sort/:by' => 'cars#index', as: 'sort'
+  get 'sort/:id/:by' => 'salons#show', as: 'sort'
   root 'salons#index'
 
   namespace :admin do
