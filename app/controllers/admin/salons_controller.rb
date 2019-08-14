@@ -2,7 +2,7 @@ class Admin::SalonsController < Admin::AdminController
   before_action :find_salon, only: %i[ show edit update destroy]
 
   def index
-    @salons = Salon.all
+    @salons = Salon.order(:name).page params[:page]
   end
 
   def show; end
@@ -43,6 +43,6 @@ class Admin::SalonsController < Admin::AdminController
   end
 
   def salons_params
-    params.require(:salon).permit(:name, picture_attributes: %i[id url])
+    params.require(:salon).permit(:name, :car_id, picture_attributes: %i[id url])
   end
 end

@@ -2,7 +2,7 @@ class Admin::CarsController < Admin::AdminController
   before_action :find_car, only: %i[show edit update destroy]
 
   def index
-    @cars = Car.all
+    @cars = Car.order(:brand).page params[:page]
   end
 
   def show; end

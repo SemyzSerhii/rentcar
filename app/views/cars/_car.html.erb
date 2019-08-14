@@ -8,30 +8,36 @@
           <%= image_tag 'https://www.driversupport.com/wp-content/uploads/2018/04/Placeholder.gif', class: 'image-size' %>
         <% end %>
       </div>
-      <div>
-        <div id="container" >
+      <div class="position-car-points">
+        <div id="container-car-1" >
           <h3 class="car-name">
             <%= car.brand %>
             <%= car.model %>
           </h3>
           <div class="points-position">
-          <p class="car-points">Color:</p> <p class="points color-points"><%= car.color %></p>
+            <i class="fas fa-tint car-points"></i> <p class="points color-points"><%= car.color %></p>
           </div>
           <div class="points-position">
-            <p class="car-points">Age:</p> <p class="points color-points"> <%=car.age %></p>
+            <i class="far fa-calendar-alt car-points"></i> <p class="points color-points"> <%=car.age %></p>
           </div>
           <div class="points-position">
-          <p class="car-points">Engine:</p> <p class="points color-points"> <%= car.engine %></p>
+            <i class="fas fa-cogs car-points" ></i> <p class="points color-points"> engine <%= car.engine %></p>
           </div>
           <div class="points-position">
-          <p class="car-points">Fuel type:</p> <p class="points color-points"> <%= car.fuel_type %></p>
+            <i class="fas fa-gas-pump car-points"></i> <p class="points color-points"> <%= car.fuel_type %></p>
           </div>
           <div class="points-position">
             <% if car.enum_status? %>
-              <p class="car-points"> Status:</p><p class="points status-free">free</p>
+              <i class="fas fa-unlock-alt car-points"></i><p class="points status-free">free</p>
             <% else %>
-              <p class="car-points"> Status:</p><p class="points status-close">close</p>
+              <i class="fas fa-unlock-alt car-points"></i>><p class="points status-close">close</p>
             <%end %>
+          </div>
+        </div>
+        <div id="container-car-2" >
+          <h3 class="car-price"> Price per day: 1000$</h3>
+          <div class="button-rent-position">
+            <%= button_tag 'Rent car', class: 'button-rent-car' %>
           </div>
         </div>
       </div>

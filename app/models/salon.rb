@@ -1,4 +1,6 @@
 class Salon < ApplicationRecord
+  paginates_per 6
+
   has_many :cars
   has_many :orders
 

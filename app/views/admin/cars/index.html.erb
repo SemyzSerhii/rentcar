@@ -7,6 +7,9 @@
       <div class="link-new">
         <%= link_to 'New car', new_admin_car_path, class: 'new-car' %>
       </div>
+      <div class="paginate-car-top">
+        <%= paginate @cars %>
+      </div>
       <table class="table table-bordered margin_table">
         <thead>
         <tr>
@@ -32,6 +35,9 @@
         <% end %>
         </tbody>
       </table>
+      <div class="paginate-car-bottom">
+        <%= paginate @cars %>
+      </div>
     </div>
   </main>
 </div>

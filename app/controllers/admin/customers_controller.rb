@@ -1,6 +1,6 @@
 class Admin::CustomersController < Admin::AdminController
   def index
-    @customers = Customer.all
+    @customers = Customer.order(:email).page params[:page]
   end
 
   def show
