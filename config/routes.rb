@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   devise_for :customers
 
   resources :salons
+  resources :orders
 
   get 'sort/:id/:by' => 'salons#show', as: 'sort'
   root 'salons#index'

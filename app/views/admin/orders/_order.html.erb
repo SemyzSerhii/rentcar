@@ -1,6 +1,12 @@
 <th scope="row"><%=order.id %></th>
-<td class="width-name"><%= order.cars_id%></td>
-<td><%=order.customers_id%></td>
+<td><%=order.customer_id%></td>
+<td><%=order.customer_name%></td>
+<td class="width-name"><%= order.car_id%></td>
+<td class="width-name"><%= order.car_brand%></td>
+<td class="width-name"><%= order.car_model%></td>
+<td class="width-name"><%= order.salon_id%></td>
+<td class="width-name"><%= order.salon_name%></td>
 <td><%=order.created_at%></td>
 <td><%=order.updated_at%></td>
+
 

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_08_14_080332) do
+ActiveRecord::Schema.define(version: 2019_08_15_124554) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -53,12 +53,18 @@ ActiveRecord::Schema.define(version: 2019_08_14_080332) do
   end
 
   create_table "orders", force: :cascade do |t|
-    t.bigint "cars_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.bigint "customers_id"
-    t.index ["cars_id"], name: "index_orders_on_cars_id"
-    t.index ["customers_id"], name: "index_orders_on_customers_id"
+    t.string "customer_name"
+    t.string "car_brand"
+    t.string "car_model"
+    t.bigint "car_id"
+    t.bigint "customer_id"
+    t.bigint "salon_id"
+    t.string "salon_name"
+    t.index ["car_id"], name: "index_orders_on_car_id"
+    t.index ["customer_id"], name: "index_orders_on_customer_id"
+    t.index ["salon_id"], name: "index_orders_on_salon_id"
   end
 
   create_table "salons", force: :cascade do |t|
@@ -70,7 +76,8 @@ ActiveRecord::Schema.define(version: 2019_08_14_080332) do
   end
 
   add_foreign_key "cars", "salons"
-  add_foreign_key "orders", "cars", column: "cars_id"
-  add_foreign_key "orders", "customers", column: "customers_id"
+  add_foreign_key "orders", "cars"
+  add_foreign_key "orders", "customers"
+  add_foreign_key "orders", "salons"
   add_foreign_key "salons", "cars"
 end

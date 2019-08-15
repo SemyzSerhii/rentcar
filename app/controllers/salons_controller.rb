@@ -7,6 +7,7 @@ class SalonsController < ApplicationController
     @salon = Salon.find(params[:id])
     @cars = @salon.cars.order(:brand).page params[:page]
     sort_cars if params[:by]
+    @order = Order.new
   end
 
   def sort_cars
