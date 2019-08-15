@@ -1,0 +1,55 @@
+.size-orders-show {
+  padding: 2rem 2rem 2rem 31rem;
+  background-color: #f9fafb;
+}
+
+.show-maim-order {
+  height: 33rem;
+  padding: 2rem;
+  border: 1px solid lightgrey;
+  border-radius: 0.25rem;
+  background-color: #fff;
+}
+
+.show-display-order{
+  display: flex;
+}
+
+.show-table-order {
+  width: 75%;
+  height: 20%;
+  padding: 0.5rem;
+  border: 1px solid lightgrey;
+  border-radius: 0.25rem;
+  background-color: #fff;
+}
+
+.table td {
+  padding: 0.626rem;
+}
+
+.link-show-order {
+  height: 3rem;
+  display: grid;
+  padding-left: 1rem;
+}
+
+.button_show-order {
+  text-decoration: none;
+  background-color: #f9fafb;
+  color: black;
+  padding: 0.55rem 1.5rem 0.55rem 1.5rem;
+  border: 1px solid rgba(0,0,0,.0625);
+  border-radius: 0.5rem;
+}
+
+a.button_show-order:hover {
+  background: whitesmoke;
+  color: black;
+  text-decoration: none;
+}
+
+.button-margin-order {
+  margin:  0 0.5rem 0.5rem 0.5rem;
+}
+

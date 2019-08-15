@@ -30,15 +30,28 @@
             <% if car.enum_status? %>
               <i class="fas fa-unlock-alt car-points"></i><p class="points status-free">free</p>
             <% else %>
-              <i class="fas fa-unlock-alt car-points"></i>><p class="points status-close">close</p>
+              <i class="fas fa-unlock-alt car-points"></i><p class="points status-close">close</p>
             <%end %>
           </div>
         </div>
         <div id="container-car-2" >
           <h3 class="car-price"> Price per day: 1000$</h3>
-          <div class="button-rent-position">
-            <%= button_tag 'Rent car', class: 'button-rent-car' %>
-          </div>
+          <% if current_customer.present? %>
+            <% if car.enum_status? %>
+              <%= form_for @order do |f| %>
+                <%= f.hidden_field :customer_name, value: current_customer.name %>
+                <%= f.hidden_field :car_brand, value: car.brand %>
+                <%= f.hidden_field :car_model, value: car.model %>
+                <%= f.hidden_field :customer_id, value: current_customer.id %>
+                <%= f.hidden_field :car_id,  value: car.id %>
+                <%= f.hidden_field :salon_id, value: @salon.id %>
+                <%= f.hidden_field :salon_name, value: @salon.name %>
+                <div class="button-rent-position">
+                  <%= button_tag 'Rent car' ,class: 'button-rent-car' %>
+                </div>
+              <%end %>
+            <%end %>
+          <%end %>
         </div>
       </div>
     </div>

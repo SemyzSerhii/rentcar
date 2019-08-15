@@ -68,3 +68,6 @@
   margin-bottom: 0;
 }
 
+.salon-hover:hover {
+  background-color: whitesmoke;
+}
