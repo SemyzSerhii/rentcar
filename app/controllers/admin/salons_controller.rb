@@ -24,7 +24,7 @@ class Admin::SalonsController < Admin::AdminController
 
   def update
     if @salon.update_attributes(salons_params)
-      redirect_to admin_salons_path
+      redirect_to edit_admin_salon_path(@salon)
     else
       render :edit
     end
