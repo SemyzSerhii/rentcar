@@ -1,5 +1,4 @@
 class Car < ApplicationRecord
-  paginates_per 4
 
   extend Enumerize
 
@@ -9,6 +8,7 @@ class Car < ApplicationRecord
   has_one :picture, as: :imageable, class_name: 'Image', dependent: :destroy
   accepts_nested_attributes_for :picture
 
+  paginates_per 6
 
   enumerize :fuel_type, in: %i[diesel gasoline electricity gas hybrid]
   enumerize :age, in: 1990..2020

@@ -23,7 +23,7 @@ class Admin::CarsController < Admin::AdminController
   def edit; end
 
   def update
-    if @car.update_attributes(cars_params)
+    if @car.update(cars_params)
       redirect_to admin_car_path(@car)
     else
       render :edit
