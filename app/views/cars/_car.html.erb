@@ -3,9 +3,10 @@
     <div class="car">
       <div>
         <% if car.picture.present? %>
-          <%= image_tag car.picture.url.url, class: 'image-size' %>
+          <%= image_tag car.picture.url.url, class: 'image-size-car' %>
         <% else %>
-          <%= image_tag 'https://www.driversupport.com/wp-content/uploads/2018/04/Placeholder.gif', class: 'image-size' %>
+          <%= image_tag 'https://www.driversupport.com/wp-content/uploads/2018/04/Placeholder.gif',
+            class: 'image-size-car' %>
         <% end %>
       </div>
       <div class="position-car-points">
