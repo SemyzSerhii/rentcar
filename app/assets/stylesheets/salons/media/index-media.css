@@ -1,0 +1,131 @@
+@media only screen and (min-width: 1441px) and (max-width: 2561px) {
+
+  .salons-positions {
+    height: 75rem;
+  }
+
+  .image-size {
+    height: 22rem;
+  }
+
+  h3.salon-name {
+    font-size: 60px;
+  }
+
+  .rent-car {
+    font-size: 28px;
+  }
+
+  .page-link {
+    padding: 1rem 1.5rem;
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1439px) {
+
+  .paginate-salon-root {
+    padding-left: 2.5rem;
+  }
+
+  .salons-positions {
+    padding: 0 2rem 0 2rem;
+  }
+
+  .salon-positions {
+    padding: 0.5rem;
+    width: 50%;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+
+  .paginate-salon-root {
+    padding-left: 1.5rem;
+  }
+
+  .salons-positions {
+    padding: 0 1rem 0 1rem;
+  }
+
+  .salon-positions {
+    padding: 0.5rem;
+    width: 50%;
+  }
+
+  .rent-car {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (min-width: 425px) and (max-width: 767px) {
+
+  .paginate-salon-root {
+    padding-left: 1rem;
+  }
+
+  .salons-positions {
+    padding: 0 0.5rem 0 0.5rem;
+  }
+
+  .salon-positions {
+    padding: 0.5rem;
+    width: 100%;
+  }
+
+  .rent-car {
+    line-height: 20px;
+  }
+}
+
+@media only screen and (min-width: 375px) and (max-width: 424px) {
+
+  .paginate-salon-root {
+    padding-left: 1rem;
+  }
+
+  .salons-positions {
+    padding: 0 0.5rem 0 0.5rem;
+  }
+
+  .salon-positions {
+    padding: 0.5rem;
+    width: 100%;
+  }
+
+  .rent-car {
+    line-height: 20px;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 374px) {
+
+  .paginate-salon-root {
+    padding-left: 1rem;
+  }
+
+  .salons-positions {
+    padding: 0 0.5rem 0 0.5rem;
+  }
+
+  .salon-positions {
+    padding: 0.5rem;
+    width: 100%;
+  }
+
+  .rent-car {
+    line-height: 20px;
+  }
+
+  .image-size {
+    height: 12rem;
+  }
+#container {
+  height: 75px;
+}
+
+  h3.salon-name {
+    line-height: 95px;
+    font-size: 40px;
+  }
+}

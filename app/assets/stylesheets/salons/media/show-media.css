@@ -1,0 +1,160 @@
+@media only screen and (min-width: 1441px) and (max-width: 2561px) {
+
+  .cars-positions {
+    height: 100rem;
+  }
+
+  .image-size-car {
+    height: 25rem;
+  }
+
+  #container-car-1 {
+    height: 320px;
+  }
+
+  h3.car-name {
+    font-size: 40px;
+  }
+
+  .car-points {
+    font-size: 30px;
+  }
+
+  .points {
+    font-size: 30px;
+  }
+
+  #container-car-2 {
+    height: 320px;
+  }
+
+  h3.car-price {
+    padding-top: 2.3rem;
+    padding-left: 3rem;
+    font-size: 40px;
+  }
+
+  .button-rent-car {
+    font-size: 45px;
+    margin-left: 2.5rem;
+  }
+
+  .page-link {
+    padding: 1rem 1.5rem;
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1439px) {
+
+  .paginate-car-root {
+    padding-top: 2rem;
+    padding-left: 2.5rem;
+  }
+
+  .cars-positions {
+    padding: 0 2rem 0 2rem;
+  }
+
+  .car-positions {
+    padding: 0.5rem;
+    width: 50%;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+
+  .paginate-salon-root {
+    padding-left: 1.5rem;
+  }
+
+  .cars-positions {
+    padding: 0 1rem 0 1rem;
+  }
+
+  .button-rent-position {
+    padding: 0.5rem;
+  }
+
+  h3.car-price {
+    padding-left: 1rem;
+  }
+
+  .car-positions {
+    padding: 0.5rem;
+    width: 50%;
+  }
+}
+
+@media only screen and (min-width: 425px) and (max-width: 767px) {
+
+  .paginate-car-root {
+    padding-left: 1rem;
+  }
+
+  .cars-positions {
+    padding: 0 0.5rem 0 0.5rem;
+  }
+
+  .car-positions {
+    padding: 0.5rem;
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 375px) and (max-width: 424px) {
+
+  .paginate-car-root {
+    padding-left: 1rem;
+  }
+
+  .cars-positions {
+    padding: 0 0.5rem 0 0.5rem;
+  }
+
+  .button-rent-position {
+    padding: 0.5rem;
+  }
+
+  h3.car-price {
+    padding-left: 1rem;
+  }
+
+  .car-positions {
+    padding: 0.5rem;
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 374px) {
+
+  .paginate-ar-root {
+    padding-left: 1rem;
+  }
+
+  .cars-positions {
+    padding: 0 0.5rem 0 0.5rem;
+  }
+
+  .car-positions {
+    padding: 0.5rem;
+    width: 100%;
+  }
+
+  .image-size-car {
+    height: 12rem;
+  }
+
+  h3.car-name {
+    line-height: 40px;
+    font-size: 25px;
+  }
+
+  .button-rent-position {
+    padding: 0.3rem;
+  }
+
+  h3.car-price {
+    padding-left: 0.8rem;
+  }
+}

@@ -23,7 +23,7 @@ class Admin::SalonsController < Admin::AdminController
   def edit; end
 
   def update
-    if @salon.update_attributes(salons_params)
+    if @salon.update(salons_params)
       redirect_to admin_salon_path(@salon)
     else
       render :edit
@@ -31,9 +31,8 @@ class Admin::SalonsController < Admin::AdminController
   end
 
   def destroy
-     if @salon.destroy
-       redirect_to admin_salons_path
-     end
+    @salon.destroy
+    redirect_to admin_salons_path
   end
 
   private

@@ -7,10 +7,9 @@ class Admin::OrdersController < Admin::AdminController
   def show; end
 
   def destroy
-    if @order.destroy
-      @order.car.update(enum_status: true)
-      redirect_to admin_orders_path
-    end
+    @order.destroy
+    @order.car.update(enum_status: true)
+    redirect_to admin_orders_path
   end
 
   private
