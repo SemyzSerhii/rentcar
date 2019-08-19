@@ -1,47 +1,42 @@
 @media only screen and (min-width: 1441px) and (max-width: 2561px) {
 
-  .position-body-navbar {
-    height: 88px;
+  .cars-positions {
+    height: 100rem;
   }
 
-  .sidebar-logo-1 {
-    padding: 45px 40px;
+  .image-size-car {
+    height: 25rem;
   }
 
-  #demoFont-1 {
-    font-size: 36px;
+  #container-car-1 {
+    height: 320px;
   }
 
-  .customer-avatar {
-    width: 65px;
-    height: 65px;
-    margin-top: 10px;
+  h3.car-name {
+    font-size: 40px;
   }
 
-  .name-customer {
-    font-size: 2.25rem;
+  .car-points {
+    font-size: 30px;
   }
 
-  .nav-link {
-    font-size: 2rem;
-    padding-top: 0.9rem;
-    height: 88px;
+  .points {
+    font-size: 30px;
   }
 
-  .salons-positions {
-    height: 75rem;
+  #container-car-2 {
+    height: 320px;
   }
 
-  .image-size {
-    height: 22rem;
+  h3.car-price {
+    padding-top: 2.3rem;
+    padding-left: 3rem;
+    font-size: 40px;
   }
 
-  h3.salon-name {
-    font-size: 60px;
-  }
-
-  .rent-car {
-    font-size: 28px;
+  .button-rent-car {
+    font-size: 45px;
+    margin-left: 2.5rem;
   }
 
   .page-link {
@@ -52,15 +47,16 @@
 
 @media only screen and (min-width: 1024px) and (max-width: 1439px) {
 
-  .paginate-salon-root {
+  .paginate-car-root {
+    padding-top: 2rem;
     padding-left: 2.5rem;
   }
 
-  .salons-positions {
+  .cars-positions {
     padding: 0 2rem 0 2rem;
   }
 
-  .salon-positions {
+  .car-positions {
     padding: 0.5rem;
     width: 50%;
   }
@@ -68,273 +64,97 @@
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
 
-  .mt-2 {
-    margin-top: 0 !important;
-  }
-
   .paginate-salon-root {
     padding-left: 1.5rem;
   }
 
-  .salons-positions {
+  .cars-positions {
     padding: 0 1rem 0 1rem;
   }
 
-  .salon-positions {
+  .button-rent-position {
     padding: 0.5rem;
-    width: 50%;
   }
 
-  .rent-car {
-    font-size: 18px;
+  h3.car-price {
+    padding-left: 1rem;
+  }
+
+  .car-positions {
+    padding: 0.5rem;
+    width: 50%;
   }
 }
 
 @media only screen and (min-width: 425px) and (max-width: 767px) {
 
-  .mt-2 {
-    margin-top: 0 !important;
-  }
-
-  #demoFont-1 {
-    font-size: 18px;
-  }
-
-  #container {
-    height: 65px;
-  }
-
-  h3.salon-name {
-    font-size: 35px;
-    line-height: 75px;
-  }
-
-  .paginate-salon-root {
+  .paginate-car-root {
     padding-left: 1rem;
   }
 
-  .salons-positions {
+  .cars-positions {
     padding: 0 0.5rem 0 0.5rem;
   }
 
-  .salon-positions {
+  .car-positions {
     padding: 0.5rem;
     width: 100%;
-  }
-
-  .rent-car {
-    line-height: 20px;
-  }
-
-  .sidebar-logo-1 {
-    padding: 30px 0;
-  }
-
-  .navbar-brand-1 {
-    padding: 1.7rem 2rem 0.5rem 2rem;
-  }
-
-  .position-body-navbar {
-    width: 16.5rem;
-  }
-
-  .position-body-navbar {
-    height: 60px;
-  }
-
-  .link {
-    height: 60px;
-    width: 50%;
-  }
-
-  .link-out {
-    width: 100%;
-  }
-
-  .customer-avatar {
-    width: 60px;
-    height: 60px;
-    margin-top: 10px;
-  }
-
-  .name-customer {
-    padding-top: 1.5rem;
-    font-size: 1rem;
-  }
-
-  .navbar-nav .nav-link {
-    padding-left: 2rem;
-  }
-
-  .nav-link {
-    padding: 1rem 2rem;
   }
 }
 
 @media only screen and (min-width: 375px) and (max-width: 424px) {
-  .mt-2 {
-    margin-top: 0 !important;
-  }
 
-  #demoFont-1 {
-    font-size: 18px;
-  }
-
-  #container {
-    height: 65px;
-  }
-
-  h3.salon-name {
-    font-size: 35px;
-    line-height: 75px;
-  }
-
-  .paginate-salon-root {
+  .paginate-car-root {
     padding-left: 1rem;
   }
 
-  .salons-positions {
+  .cars-positions {
     padding: 0 0.5rem 0 0.5rem;
   }
 
-  .salon-positions {
+  .button-rent-position {
+    padding: 0.5rem;
+  }
+
+  h3.car-price {
+    padding-left: 1rem;
+  }
+
+  .car-positions {
     padding: 0.5rem;
     width: 100%;
-  }
-
-  .rent-car {
-    line-height: 20px;
-  }
-
-  .sidebar-logo-1 {
-    padding: 30px 0;
-  }
-
-  .image-size {
-    height: 13rem;
-  }
-
-  .navbar-brand-1 {
-    padding: 1.7rem 1rem 0.5rem 1rem;
-  }
-
-  .position-body-navbar {
-    width: 15.5rem;
-  }
-
-  .position-body-navbar {
-    height: 60px;
-  }
-
-  .link {
-    height: 60px;
-    width: 50%;
-  }
-
-  .link-out {
-    width: 100%;
-  }
-
-  .customer-avatar {
-    width: 60px;
-    height: 60px;
-    margin-top: 10px;
-  }
-
-  .name-customer {
-    padding-top: 1.5rem;
-    font-size: 1rem;
-  }
-
-  .navbar-nav .nav-link {
-    padding-left: 2rem;
-  }
-
-  .nav-link {
-    padding: 1rem 2rem;
   }
 }
 
 @media only screen and (min-width: 320px) and (max-width: 374px) {
-  .mt-2 {
-    margin-top: 0 !important;
-  }
 
-  #demoFont-1 {
-    font-size: 18px;
-  }
-
-  #container {
-    height: 65px;
-  }
-
-  h3.salon-name {
-    font-size: 35px;
-    line-height: 75px;
-  }
-
-  .paginate-salon-root {
+  .paginate-ar-root {
     padding-left: 1rem;
   }
 
-  .salons-positions {
+  .cars-positions {
     padding: 0 0.5rem 0 0.5rem;
   }
 
-  .salon-positions {
+  .car-positions {
     padding: 0.5rem;
     width: 100%;
   }
 
-  .rent-car {
-    line-height: 20px;
+  .image-size-car {
+    height: 12rem;
   }
 
-  .sidebar-logo-1 {
-    padding: 30px 0;
+  h3.car-name {
+    line-height: 40px;
+    font-size: 25px;
   }
 
-  .image-size {
-    height: 13rem;
+  .button-rent-position {
+    padding: 0.3rem;
   }
 
-  .navbar-brand-1 {
-    padding: 1.7rem 0.5rem 0.5rem 0.5rem;
-  }
-
-  .position-body-navbar {
-    width: 13rem;
-  }
-
-  .position-body-navbar {
-    height: 60px;
-  }
-
-  .link {
-    height: 60px;
-    width: 50%;
-  }
-
-  .link-out {
-    width: 100%;
-  }
-
-  .customer-avatar {
-    width: 50px;
-    height: 50px;
-    margin-top: 17px;
-  }
-
-  .name-customer {
-    padding-top: 1.7rem;
-    font-size: 0.85rem;
-  }
-
-  .navbar-nav .nav-link {
-    padding-left: 1rem;
-  }
-
-  .nav-link {
-    padding: 1rem 1rem;
+  h3.car-price {
+    padding-left: 0.8rem;
   }
 }

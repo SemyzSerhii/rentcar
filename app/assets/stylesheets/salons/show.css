@@ -113,6 +113,7 @@ h3.car-price {
 }
 
 .paginate-car-root {
+  padding-top: 1rem;
   padding-left: 4rem;
   float: inherit;
 }
@@ -150,3 +151,5 @@ h3.car-price {
   color: black;
   border: 1px solid black;
 }
+
+@import 'show-media'

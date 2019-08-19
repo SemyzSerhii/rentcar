@@ -1,5 +1,5 @@
 class Car < ApplicationRecord
-  paginates_per 6
+  paginates_per 4
 
   extend Enumerize
 
