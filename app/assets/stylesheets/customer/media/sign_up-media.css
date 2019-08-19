@@ -1,0 +1,86 @@
+@media only screen and (min-width: 1441px) and (max-width: 2561px) {
+  .image-sign-up {
+    font-size: 15rem;
+  }
+
+  .label-sign-up {
+    font-size: 4rem;
+  }
+
+  .label {
+    font-size: 2.5rem;
+  }
+
+  form input.image-customer-new {
+    font-size: 2rem;
+  }
+
+  .form-control {
+    font-size: 2rem;
+  }
+
+  .button-customer-new {
+    font-size: 2rem;
+  }
+
+  .button-customer-link {
+    font-size: 2rem;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .butt-height-new {
+    height: 5rem;
+  }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1439px) {
+  .size-new-customer {
+    padding: 0.5rem 20rem 2rem 20rem;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .size-new-customer {
+    padding: 0.5rem 10rem 2rem 10rem;
+  }
+
+}
+
+@media only screen and (min-width: 425px) and (max-width: 767px) {
+  .size-new-customer {
+    padding: 0.5rem 3rem 2rem 3rem;
+  }
+
+  .image-sign-up {
+    font-size: 5rem;
+  }
+}
+
+@media only screen and (min-width: 375px) and (max-width: 424px) {
+  .form-new-customer {
+    padding: 1rem;
+  }
+
+  .size-new-customer {
+    padding: 0.5rem 1.5rem 2rem 1.5rem;
+  }
+
+  .image-sign-up {
+    font-size: 5rem;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 374px) {
+  .form-new-customer {
+    padding: 0.75rem;
+  }
+
+  .size-new-customer {
+    padding: 0.5rem 1rem 2rem 1rem;
+  }
+
+  .image-sign-up {
+    font-size: 5rem;
+  }
+
+}
