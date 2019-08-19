@@ -1,0 +1,340 @@
+@media only screen and (min-width: 1441px) and (max-width: 2561px) {
+
+  .position-body-navbar {
+    height: 88px;
+  }
+
+  .sidebar-logo-1 {
+    padding: 45px 40px;
+  }
+
+  #demoFont-1 {
+    font-size: 36px;
+  }
+
+  .customer-avatar {
+    width: 65px;
+    height: 65px;
+    margin-top: 10px;
+  }
+
+  .name-customer {
+    font-size: 2.25rem;
+  }
+
+  .nav-link {
+    font-size: 2rem;
+    padding-top: 0.9rem;
+    height: 88px;
+  }
+
+  .salons-positions {
+    height: 75rem;
+  }
+
+  .image-size {
+    height: 22rem;
+  }
+
+  h3.salon-name {
+    font-size: 60px;
+  }
+
+  .rent-car {
+    font-size: 28px;
+  }
+
+  .page-link {
+    padding: 1rem 1.5rem;
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1439px) {
+
+  .paginate-salon-root {
+    padding-left: 2.5rem;
+  }
+
+  .salons-positions {
+    padding: 0 2rem 0 2rem;
+  }
+
+  .salon-positions {
+    padding: 0.5rem;
+    width: 50%;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+
+  .mt-2 {
+    margin-top: 0 !important;
+  }
+
+  .paginate-salon-root {
+    padding-left: 1.5rem;
+  }
+
+  .salons-positions {
+    padding: 0 1rem 0 1rem;
+  }
+
+  .salon-positions {
+    padding: 0.5rem;
+    width: 50%;
+  }
+
+  .rent-car {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (min-width: 425px) and (max-width: 767px) {
+
+  .mt-2 {
+    margin-top: 0 !important;
+  }
+
+  #demoFont-1 {
+    font-size: 18px;
+  }
+
+  #container {
+    height: 65px;
+  }
+
+  h3.salon-name {
+    font-size: 35px;
+    line-height: 75px;
+  }
+
+  .paginate-salon-root {
+    padding-left: 1rem;
+  }
+
+  .salons-positions {
+    padding: 0 0.5rem 0 0.5rem;
+  }
+
+  .salon-positions {
+    padding: 0.5rem;
+    width: 100%;
+  }
+
+  .rent-car {
+    line-height: 20px;
+  }
+
+  .sidebar-logo-1 {
+    padding: 30px 0;
+  }
+
+  .navbar-brand-1 {
+    padding: 1.7rem 2rem 0.5rem 2rem;
+  }
+
+  .position-body-navbar {
+    width: 16.5rem;
+  }
+
+  .position-body-navbar {
+    height: 60px;
+  }
+
+  .link {
+    height: 60px;
+    width: 50%;
+  }
+
+  .link-out {
+    width: 100%;
+  }
+
+  .customer-avatar {
+    width: 60px;
+    height: 60px;
+    margin-top: 10px;
+  }
+
+  .name-customer {
+    padding-top: 1.5rem;
+    font-size: 1rem;
+  }
+
+  .navbar-nav .nav-link {
+    padding-left: 2rem;
+  }
+
+  .nav-link {
+    padding: 1rem 2rem;
+  }
+}
+
+@media only screen and (min-width: 375px) and (max-width: 424px) {
+  .mt-2 {
+    margin-top: 0 !important;
+  }
+
+  #demoFont-1 {
+    font-size: 18px;
+  }
+
+  #container {
+    height: 65px;
+  }
+
+  h3.salon-name {
+    font-size: 35px;
+    line-height: 75px;
+  }
+
+  .paginate-salon-root {
+    padding-left: 1rem;
+  }
+
+  .salons-positions {
+    padding: 0 0.5rem 0 0.5rem;
+  }
+
+  .salon-positions {
+    padding: 0.5rem;
+    width: 100%;
+  }
+
+  .rent-car {
+    line-height: 20px;
+  }
+
+  .sidebar-logo-1 {
+    padding: 30px 0;
+  }
+
+  .image-size {
+    height: 13rem;
+  }
+
+  .navbar-brand-1 {
+    padding: 1.7rem 1rem 0.5rem 1rem;
+  }
+
+  .position-body-navbar {
+    width: 15.5rem;
+  }
+
+  .position-body-navbar {
+    height: 60px;
+  }
+
+  .link {
+    height: 60px;
+    width: 50%;
+  }
+
+  .link-out {
+    width: 100%;
+  }
+
+  .customer-avatar {
+    width: 60px;
+    height: 60px;
+    margin-top: 10px;
+  }
+
+  .name-customer {
+    padding-top: 1.5rem;
+    font-size: 1rem;
+  }
+
+  .navbar-nav .nav-link {
+    padding-left: 2rem;
+  }
+
+  .nav-link {
+    padding: 1rem 2rem;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 374px) {
+  .mt-2 {
+    margin-top: 0 !important;
+  }
+
+  #demoFont-1 {
+    font-size: 18px;
+  }
+
+  #container {
+    height: 65px;
+  }
+
+  h3.salon-name {
+    font-size: 35px;
+    line-height: 75px;
+  }
+
+  .paginate-salon-root {
+    padding-left: 1rem;
+  }
+
+  .salons-positions {
+    padding: 0 0.5rem 0 0.5rem;
+  }
+
+  .salon-positions {
+    padding: 0.5rem;
+    width: 100%;
+  }
+
+  .rent-car {
+    line-height: 20px;
+  }
+
+  .sidebar-logo-1 {
+    padding: 30px 0;
+  }
+
+  .image-size {
+    height: 13rem;
+  }
+
+  .navbar-brand-1 {
+    padding: 1.7rem 0.5rem 0.5rem 0.5rem;
+  }
+
+  .position-body-navbar {
+    width: 13rem;
+  }
+
+  .position-body-navbar {
+    height: 60px;
+  }
+
+  .link {
+    height: 60px;
+    width: 50%;
+  }
+
+  .link-out {
+    width: 100%;
+  }
+
+  .customer-avatar {
+    width: 50px;
+    height: 50px;
+    margin-top: 17px;
+  }
+
+  .name-customer {
+    padding-top: 1.7rem;
+    font-size: 0.85rem;
+  }
+
+  .navbar-nav .nav-link {
+    padding-left: 1rem;
+  }
+
+  .nav-link {
+    padding: 1rem 1rem;
+  }
+}
