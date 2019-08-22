@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_08_15_124554) do
+ActiveRecord::Schema.define(version: 2019_08_22_092922) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -49,6 +49,10 @@ ActiveRecord::Schema.define(version: 2019_08_15_124554) do
     t.string "url"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.string "crop_x"
+    t.string "crop_y"
+    t.string "crop_w"
+    t.string "crop_h"
     t.index ["imageable_type", "imageable_id"], name: "index_images_on_imageable_type_and_imageable_id"
   end
 
