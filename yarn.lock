@@ -4243,6 +4243,11 @@ neo-async@^2.5.0:
   resolved "https://registry.yarnpkg.com/neo-async/-/neo-async-2.6.1.tgz#ac27ada66167fa8849a6addd837f6b189ad2081c"
   integrity sha512-iyam8fBuCUpWeKPGpaNMetEocMt364qkCsfL9JuhjXX6dRnguRVOfk2GZaDpPjcOKiiXCPINZC1GczQ7iTq3Zw==
 
+ng-jcrop@^2.2.1:
+  version "2.2.1"
+  resolved "https://registry.yarnpkg.com/ng-jcrop/-/ng-jcrop-2.2.1.tgz#79701056dffa013af8b3d2165e458492ff4343a6"
+  integrity sha1-eXAQVt/6ATr4s9IWXkWEkv9DQ6Y=
+
 nice-try@^1.0.4:
   version "1.0.5"
   resolved "https://registry.yarnpkg.com/nice-try/-/nice-try-1.0.5.tgz#a3378a7696ce7d223e88fc9b764bd7ef1089e366"

@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  devise_for :customers
+  devise_for :customers, controllers: { registrations: 'registrations' }
 
   resources :salons
   resources :orders

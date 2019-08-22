@@ -20,6 +20,7 @@ gem 'pg', '>= 0.18', '< 2.0'
 gem 'puma', '~> 3.11'
 gem 'rails-assets-jcrop', source: 'https://rails-assets.org'
 gem 'sass-rails', '~> 5'
+gem 'simple_form'
 gem 'turbolinks', '~> 5'
 gem 'webpacker', '~> 4.0'
 
