@@ -9,7 +9,9 @@ require("@rails/activestorage").start();
 require("channels");
 require("jquery");
 require('bootstrap');
-require('ng-jcrop');
+require('jcrop-0.9.12/js/jquery.min');
+require('jcrop-0.9.12/js/jquery.Jcrop.min');
+require('jcrop-0.9.12/css/jquery.Jcrop.css');
 
 // Uncomment to copy all static images under ../images to the output folder and reference
 // them with the image_pack_tag helper in views (e.g <%= image_pack_tag 'rails.png' %>)
