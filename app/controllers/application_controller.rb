@@ -4,6 +4,7 @@ class ApplicationController < ActionController::Base
   protected
 
   def configure_permitted_parameters
-    devise_parameter_sanitizer.permit(:sign_up,  keys: [:crop_x, :crop_y, :crop_w, :crop_h, :name, :admin, picture_attributes: %i[id url]])
+    devise_parameter_sanitizer.permit(:sign_up,  keys: [ :name, :admin, :avatar, :crop_x, :crop_y, :crop_w, :crop_h])
+    devise_parameter_sanitizer.permit(:account_update,  keys: [ :name, :admin, :avatar, :crop_x, :crop_y, :crop_w, :crop_h])
   end
 end
