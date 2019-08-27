@@ -3,6 +3,7 @@ Rails.application.routes.draw do
 
   resources :salons
   resources :orders
+  resources :customers
 
   get 'sort/:id/:by' => 'salons#show', as: 'sort'
   root 'salons#index'
