@@ -65,6 +65,7 @@ h3.salon-name {
 .paginate-salon-root {
   padding-left: 4rem;
   float: inherit;
+  padding-top: 1rem;
 }
 
 .page-link {

@@ -7,4 +7,8 @@
   text-decoration: none;
 }
 
+.sort {
+  padding-top: 1rem;
+}
+
 @import "media/sort-media";
