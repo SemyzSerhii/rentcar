@@ -38,6 +38,12 @@
   height: 54px;
 }
 
+.position-body-navbar-customer {
+  float: right;
+  height: 54px;
+  width: 15rem;
+}
+
 .link {
   float: left;
   display: flex;
@@ -69,6 +75,10 @@
 .navbar-nav .nav-link {
   padding-right: 1rem;
   padding-left: 1rem;
+}
+
+.nav-link-edit {
+  padding: 0;
 }
 
 @import "navbar-media";

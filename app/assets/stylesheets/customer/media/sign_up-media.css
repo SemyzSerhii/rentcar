@@ -35,20 +35,20 @@
 }
 @media only screen and (min-width: 1024px) and (max-width: 1439px) {
   .size-new-customer {
-    padding: 0.5rem 20rem 2rem 20rem;
+    padding: 2rem 20rem 2rem 20rem;
   }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
   .size-new-customer {
-    padding: 0.5rem 10rem 2rem 10rem;
+    padding: 1rem 10rem 2rem 10rem;
   }
 
 }
 
 @media only screen and (min-width: 425px) and (max-width: 767px) {
   .size-new-customer {
-    padding: 0.5rem 3rem 2rem 3rem;
+    padding: 1rem 3rem 2rem 3rem;
   }
 
   .image-sign-up {
@@ -62,7 +62,7 @@
   }
 
   .size-new-customer {
-    padding: 0.5rem 1.5rem 2rem 1.5rem;
+    padding: 1rem 1.5rem 2rem 1.5rem;
   }
 
   .image-sign-up {
@@ -76,7 +76,7 @@
   }
 
   .size-new-customer {
-    padding: 0.5rem 1rem 2rem 1rem;
+    padding: 1rem 1rem 2rem 1rem;
   }
 
   .image-sign-up {

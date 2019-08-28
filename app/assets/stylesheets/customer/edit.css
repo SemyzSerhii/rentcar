@@ -1,22 +1,22 @@
-.size-reset-customer {
+.size-edit-customer {
   padding: 2rem 30rem 2rem 30rem;
   color: #313435;
   text-align: center;
   background-color: #f9fafb!important;
 }
 
-.form-reset-customer {
+.form-edit-customer {
   padding: 1.5rem ;
   background-color: #fff;
   border: 1px solid rgba(0,0,0,.0625);
   border-radius: 0.25rem;
 }
 
-.image-reset {
-  font-size: 10rem;
+.image-edit-customer {
+ font-size: 10rem;
 }
 
-.label-reset {
+.label-edit-customer {
   color: #313435;
 }
 
@@ -25,33 +25,30 @@
   color: #72777a;
 }
 
+form input.image-customer-edit {
+  background-color: #fff;
+  color: #72777a;
+  margin-bottom: 1rem;
+  width: 100%;
+  border-radius: 0.5rem;
+  border: 1px solid rgba(0,0,0,.0625);
+}
+
 .field {
   margin-bottom: 0.5rem;
 }
 
-.borders-reset-customer {
+.borders-edit-customer {
   border-radius: 0.5rem;
   background-color: #fff;
   border-color: rgba(0,0,0,.0625);
 }
 
-.butt-height-reset{
+.butt-height-edit {
   height: 4rem;
 }
 
-.button-customer-reset {
-  border-radius: 0.5rem;
-  margin-bottom: 0.5rem;
-  margin-top: 0.5rem;
-  background-color: #f9fafb;
-  color: black;
-  border: 1px solid rgba(0,0,0,.0625);
-  float: left;
-  padding-left: 19px;
-  padding-right: 19px;
-}
-
-.button-customer-link-reset {
+.button-customer-edit {
   border-radius: 0.5rem;
   margin-bottom: 0.5rem;
   margin-top: 0.5rem;
@@ -61,21 +58,10 @@
   float: left;
 }
 
-.link-login {
-  padding-right: 17px;
-  padding-left: 17px;
-}
-
-form button.button-customer-reset:hover {
+form button.button-customer-edit:hover {
   background: whitesmoke;
   color: black;
   border: 1px solid rgba(0,0,0,.0625);
 }
 
-a.button-customer-link-reset:hover{
-  background: whitesmoke;
-  color: black;
-  border: 1px solid rgba(0,0,0,.0625);
-}
-
-@import "media/reset_password-media";
+@import "media/edit-media";

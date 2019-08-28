@@ -1,9 +1,9 @@
 @media only screen and (min-width: 1441px) and (max-width: 2561px) {
-  .image-log-in {
+  .image-edit-customer {
     font-size: 15rem;
   }
 
-  .label-log-in {
+  .label-edit-customer {
     font-size: 4rem;
   }
 
@@ -11,86 +11,69 @@
     font-size: 2.5rem;
   }
 
+  form input.image-customer-edit {
+    font-size: 2rem;
+  }
+
   .form-control {
     font-size: 2rem;
   }
 
-  input#customer_remember_me{
-    width: 1.5rem;
-    height: 1.5rem;
-  }
-
-  .field-remember {
+  .button-customer-edit {
     font-size: 2rem;
   }
 
-  .button-customer-in {
-    font-size: 2rem;
-  }
-
-
-  .button-customer-link-in {
-    font-size: 2rem;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-
-  .butt-height-log-in {
-    margin-top: 5rem;
-    height: 5rem;
-  }
-
-  .butt-height-link-in {
+  .butt-height-edit {
     height: 5rem;
   }
 }
 @media only screen and (min-width: 1024px) and (max-width: 1439px) {
-  .size-in-customer {
+  .size-edit-customer {
     padding: 2rem 20rem 2rem 20rem;
   }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
-  .size-in-customer {
+  .size-edit-customer {
     padding: 1rem 10rem 2rem 10rem;
   }
 
 }
 
 @media only screen and (min-width: 425px) and (max-width: 767px) {
-  .size-in-customer {
+  .size-edit-customer {
     padding: 1rem 3rem 2rem 3rem;
   }
 
-  .image-log-in {
+  .image-edit-customer {
     font-size: 5rem;
   }
 }
 
 @media only screen and (min-width: 375px) and (max-width: 424px) {
-  .form-in-customer {
+  .form-edit-customer {
     padding: 1rem;
   }
 
-  .size-in-customer {
+  .size-edit-customer {
     padding: 1rem 1.5rem 2rem 1.5rem;
   }
 
-  .image-log-in {
+  .image-edit-customer {
     font-size: 5rem;
   }
 }
 
 @media only screen and (min-width: 320px) and (max-width: 374px) {
-  .form-in-customer {
+  .form-edit-customer {
     padding: 0.75rem;
   }
 
-  .size-in-customer {
+  .size-edit-customer {
     padding: 1rem 1rem 2rem 1rem;
   }
 
-  .image-log-in {
+  .image-edit-customer {
     font-size: 5rem;
   }
 

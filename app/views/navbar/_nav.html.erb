@@ -3,12 +3,11 @@
     <%= link_to 'RentCar', root_path, id: 'demoFont-1', class: 'navbar-brand-1'%>
   </div>
   <% if current_customer.present? %>
-    <div class="position-body-navbar">
+    <div class="position-body-navbar-customer">
+      <%= link_to customer_path(current_customer), class: 'nav-link link-color nav-link-edit' do%>
       <div class="link">
         <% if current_customer.avatar.present? %>
-          <%= image_tag current_customer.avatar.thumb.url, class: 'customer-avatar' if current_customer.avatar?%>
-          <%= image_tag current_customer.avatar.tiny.url, class: 'customer-avatar' if current_customer.avatar?%>
-          <%= image_tag current_customer.avatar.large.url, class: 'customer-avatar'if current_customer.avatar? %>
+          <%= image_tag current_customer.avatar.thumb.url, class: 'customer-avatar'%>
         <%else %>
           <%= image_tag 'https://cdn.pixabay.com/photo/2012/04/26/19/43/profile-42914_960_720.png',
             class: 'customer-avatar'%>
@@ -17,10 +16,10 @@
           <%= current_customer.name %>
         </h5>
       </div>
+        <% end %>
     <ul class="navbar-nav mt-2 mt-lg-0" >
       <li class="nav-item link link-out">
         <%= link_to 'Long out', destroy_customer_session_path, method: 'delete', class: 'nav-link link-color' %>
-        <%= link_to 'Edit', edit_customer_path(current_customer) %>
       </li>
   <%else %>
     <div class="position-body-navbar">

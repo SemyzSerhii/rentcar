@@ -1,1 +1,25 @@
-<%= image_tag @customer.avatar.thumb.url %>
+<div class="card show-customer-block" >
+  <%= image_tag 'data:image/jpeg;base64,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',
+    alt: 'Image', target: '_blank', class: 'image-background-customer' %>
+  <div class="block-customer-image">
+    <% if current_customer.avatar.present? %>
+      <%= image_tag current_customer.avatar.thumb.url, alt: 'Image', class: 'image-customer-show', target: '_blank'%>
+    <% else %>
+      <%= image_tag 'https://cdn.pixabay.com/photo/2012/04/26/19/43/profile-42914_960_720.png',
+        alt: 'Image', class: 'image-customer-show', target: '_blank'%>
+    <% end %>
+  </div>
+  <div class="customer-name-show">
+    <%= current_customer.name %>
+  </div>
+  <div class="customer-email-show">
+    <%= current_customer.email %>
+  </div>
+  <% if current_customer.present?%>
+    <div class="edit-customer-show">
+    <%= link_to edit_customer_path(current_customer) do%>
+      <i class="fas fa-cog edit-setting-color"></i>
+    <% end %>
+    </div>
+  <% end %>
+</div>

@@ -12,7 +12,7 @@ class AvatarUploader < CarrierWave::Uploader::Base
   end
 
   version :large do
-    resize_to_limit(600, 600)
+    resize_to_limit(400, 400)
   end
 
   def crop
@@ -23,7 +23,7 @@ class AvatarUploader < CarrierWave::Uploader::Base
         y = model.crop_y.to_i
         w = model.crop_w.to_i
         h = model.crop_h.to_i
-        img.crop(x, y, w, h)
+        img.crop([[w, h].join('x'),[x, y].join('+')].join('+'))
       end
     end
   end
