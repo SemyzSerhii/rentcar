@@ -1,0 +1,80 @@
+@media only screen and (min-width: 1441px) and (max-width: 2561px) {
+  .image-edit-customer {
+    font-size: 15rem;
+  }
+
+  .label-edit-customer {
+    font-size: 4rem;
+  }
+
+  .label {
+    font-size: 2.5rem;
+  }
+
+  form input.image-customer-edit {
+    font-size: 2rem;
+  }
+
+  .form-control {
+    font-size: 2rem;
+  }
+
+  .button-customer-edit {
+    font-size: 2rem;
+  }
+
+  .butt-height-edit {
+    height: 5rem;
+  }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1439px) {
+  .size-edit-customer {
+    padding: 0.5rem 20rem 2rem 20rem;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .size-edit-customer {
+    padding: 0.5rem 10rem 2rem 10rem;
+  }
+
+}
+
+@media only screen and (min-width: 425px) and (max-width: 767px) {
+  .size-edit-customer {
+    padding: 0.5rem 3rem 2rem 3rem;
+  }
+
+  .image-edit-customer {
+    font-size: 5rem;
+  }
+}
+
+@media only screen and (min-width: 375px) and (max-width: 424px) {
+  .form-edit-customer {
+    padding: 1rem;
+  }
+
+  .size-edit-customer {
+    padding: 0.5rem 1.5rem 2rem 1.5rem;
+  }
+
+  .image-edit-customer {
+    font-size: 5rem;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 374px) {
+  .form-edit-customer {
+    padding: 0.75rem;
+  }
+
+  .size-edit-customer {
+    padding: 0.5rem 1rem 2rem 1rem;
+  }
+
+  .image-edit-customer {
+    font-size: 5rem;
+  }
+
+}

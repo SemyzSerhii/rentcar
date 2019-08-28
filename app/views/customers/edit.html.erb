@@ -1,26 +1,42 @@
 <%= form_for @customer do |f| %>
-  <%= f.label :avatar, 'Image', class: 'label' %>
-  <%= f.file_field :avatar , class: 'image-customer-new' %>
-  <small id="bodyHelp" class="form-text text-danger">
-    <%= @customer.errors['picture.url'].join(', ') %>
-  </small>
-  <div class="field">
-    <%= f.label :password %> <i>(leave blank if you don't want to change it)</i><br />
-    <%= f.password_field :password, autocomplete: "new-password" %>
-    <% if @minimum_password_length %>
-      <br />
-      <em><%= @minimum_password_length %> characters minimum</em>
-    <% end %>
-  </div>
-  <div class="field">
-    <%= f.label :password_confirmation %><br />
-    <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
-  </div>
-  <div class="field">
-    <%= f.label :current_password %> <i>(we need your current password to confirm your changes)</i><br />
-    <%= f.password_field :current_password, autocomplete: "current-password" %>
-  </div>
-  <div class="actions">
-    <%= f.submit "Update" %>
+  <div class="size-edit-customer">
+    <main class="form-edit-customer">
+      <div>
+        <i class="far fa-user image-edit-customer"></i>
+        <h2 class="label-edit-customer">Update customer</h2>
+        <%= f.label :avatar, 'Image', class: 'label' %>
+        <%= f.file_field :avatar , class: 'image-customer-edit' %>
+        <small id="bodyHelp" class="form-text text-danger">
+          <%= @customer.errors['picture.url'].join(', ') %>
+        </small>
+        <div class="field">
+          <%= f.search_field :name, autofocus: true, autocomplete: 'name', class: 'form-control borders-edit-customer',
+            placeholder: 'Enter your name' %>
+        </div>
+        <div class="field">
+          <%= f.email_field :email, autofocus: true, autocomplete: 'email', class: 'form-control borders-edit-customer',
+            placeholder: 'Enter your email' %>
+        </div>
+        <div class="field">
+          <%= f.password_field :password, autocomplete: 'new-password', class: 'form-control borders-edit-customer',
+              placeholder: 'Enter your new password'%>
+          <% if @minimum_password_length %>
+            <br />
+            <em><%= @minimum_password_length %> characters minimum</em>
+          <% end %>
+        </div>
+        <div class="field">
+          <%= f.password_field :password_confirmation, autocomplete: 'new-password',
+            class: 'form-control borders-edit-customer', placeholder: 'Enter your confirmation new password' %>
+        </div>
+        <div class="field">
+          <%= f.password_field :current_password, autocomplete: 'current-password',
+            class: 'form-control borders-edit-customer', placeholder: 'Enter your current password' %>
+        </div>
+        <div class="butt-height-edit">
+          <%= button_tag 'Update', class: 'btn button-customer-edit'%>
+        </div>
+      </div>
+    </main>
   </div>
 <%end %>
