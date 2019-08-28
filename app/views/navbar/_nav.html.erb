@@ -4,7 +4,7 @@
   </div>
   <% if current_customer.present? %>
     <div class="position-body-navbar-customer">
-      <%= link_to edit_customer_path(current_customer), class: 'nav-link link-color nav-link-edit' do%>
+      <%= link_to customer_path(current_customer), class: 'nav-link link-color nav-link-edit' do%>
       <div class="link">
         <% if current_customer.avatar.present? %>
           <%= image_tag current_customer.avatar.thumb.url, class: 'customer-avatar'%>
