@@ -3,7 +3,7 @@
     <%= link_to 'RentCar', root_path, id: 'demoFont-1', class: 'navbar-brand-1'%>
   </div>
   <% if current_customer.present? %>
-    <div class="position-body-navbar">
+    <div class="position-body-navbar-customer">
       <%= link_to edit_customer_path(current_customer), class: 'nav-link link-color nav-link-edit' do%>
       <div class="link">
         <% if current_customer.avatar.present? %>

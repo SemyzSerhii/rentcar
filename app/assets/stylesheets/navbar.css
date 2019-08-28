@@ -36,6 +36,11 @@
 .position-body-navbar {
   float: right;
   height: 54px;
+}
+
+.position-body-navbar-customer {
+  float: right;
+  height: 54px;
   width: 15rem;
 }
 
