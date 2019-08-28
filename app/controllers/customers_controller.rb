@@ -1,5 +1,5 @@
 class CustomersController < ApplicationController
-  before_action :find_customer
+  before_action :find_customer, only: %i[edit update show]
 
   def edit; end
 
@@ -7,10 +7,8 @@ class CustomersController < ApplicationController
     if @customer.update(customer_params)
       if params[:customer][:avatar].present?
         render :crop
-        flash[:success] = "dsf"
       else
         redirect_to @customer, notice: "Successfully."
-        flash[:success] = "dsf"
       end
     else
       render :edit

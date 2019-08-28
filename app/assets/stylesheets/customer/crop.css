@@ -1,0 +1,55 @@
+.row {
+  margin-left: 0;
+  margin-right: 0;
+  padding: 0 10rem 0 10rem;
+}
+
+.avatar-crop {
+  padding: 1rem;
+  background-color: #fff;
+  border: 1px solid rgba(0,0,0,.0625);
+  border-radius: 0.25rem;
+  margin: 2rem;
+}
+
+.avatar-crop-preview {
+  padding: 1rem;
+  background-color: #fff;
+  border: 1px solid rgba(0,0,0,.0625);
+  border-radius: 0.25rem;
+  margin: 2rem;
+  height: 12rem;
+}
+
+.avatar-preview {
+  width:100px;
+  height:100px;
+  overflow:hidden;
+}
+
+.crop-name {
+  color: #313435;
+}
+
+.butt-height-crop {
+  margin-top: 3rem;
+  height: 4rem;
+}
+
+.button-customer-crop {
+  border-radius: 0.5rem;
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
+  background-color: #fff;
+  color: black;
+  border: 1px solid rgba(0,0,0,.0625);
+  float: left;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+form button.button-customer-crop:hover {
+  background: whitesmoke;
+  color: black;
+  border: 1px solid rgba(0,0,0,.0625);
+}

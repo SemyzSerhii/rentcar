@@ -1,31 +1,32 @@
 <div class='row'>
-  <div class='col-xs-8'>
+  <div class='col-xs-8 avatar-crop'>
     <div class="panel panel-primary">
       <div class="panel-heading">
-        <h3 class="panel-title">Crop Avatar</h3>
+        <h3 class="panel-title crop-name">Crop Avatar</h3>
       </div>
       <div class="panel-body">
         <%= image_tag @customer.avatar.url(:large), id: "cropbox" %>
-        <br>
-        <%= form_for @customer do |f| %>
-            <% %w[x y w h].each do |attribute| %>
-            <%= f.text_field "crop_#{attribute}" %>
-          <% end %>
-          <div class="form-actions">
-            <%= f.submit 'Save' %>
-          </div>
-        <% end %>
       </div>
     </div>
   </div>
-  <div class='col-xs-4'>
+  <div class='col-xs-4 avatar-crop-preview '>
     <div class="panel panel-primary">
       <div class="panel-heading">
-        <h3 class="panel-title">Preview</h3>
+        <h3 class="panel-title crop-name">Preview</h3>
       </div>
       <div class="panel-body">
-        <div style="width:100px; height:100px; overflow:hidden">
+        <div class="avatar-preview">
           <%= image_tag @customer.avatar.url(:large), id: "preview" %>
+        </div>
+        <div>
+        <%= form_for @customer do |f| %>
+          <% %w[x y w h].each do |attribute| %>
+            <%= f.hidden_field "crop_#{attribute}" %>
+          <% end %>
+          <div class="butt-height-crop">
+            <%= button_tag 'Crop', class: 'btn button-customer-crop'%>
+          </div>
+        <% end %>
         </div>
       </div>
     </div>

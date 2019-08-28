@@ -12,7 +12,7 @@ class AvatarUploader < CarrierWave::Uploader::Base
   end
 
   version :large do
-    resize_to_limit(600, 600)
+    resize_to_limit(400, 400)
   end
 
   def crop
