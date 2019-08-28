@@ -22,7 +22,7 @@ class CustomersController < ApplicationController
  private
 
   def customer_params
-    params.require(:customer).permit( :avatar)
+    params.require(:customer).permit( :avatar, :crop_x, :crop_y, :crop_w, :crop_h)
   end
 
   def find_customer
